@@ -315,12 +315,42 @@ void TranslateArr(ElemType * arr, int count, int m) {
     }
 }
 
+/*
+    6、寻找主元素，如果数组中某个元素出现的次数多余数组元素个数的一半，这个元素就是主元素
+    思路：1、如果主元素存在，则个数一定大于数组元素一半
+        2、 如果用
+ */
+int MainElement(ElemType * list, int n) {
+    int count = 1;
+    int key = list[0];
+    
+    for ( int i = 1; i < n; i++) {
+        if (list[i] == key) count++;
+        else {
+            if (count > 0) count--;
+            else {
+                key = list[i];
+                count = 1;
+            }
+        }
+    }
+     
+    if (count > 0) {
+        for (int i = count = 0; i < n; i++) {
+            if (list[i] == key) count++;
+        }
+    }
+    
+    if (count > n/2) return key;
+    return -1;
+}
+
 
 int main(int argc, const char * argv[]) {
     
     LinkList La;
     LinkList Lb;
-    ElemType a[] = {1, 3, 6, 8, 13, 93};
+    ElemType a[] = {3, 3, 6, 8, 3, 93};
     ElemType b[] = {2, 3, 5, 9, 12};
     int counta = sizeof(a) / sizeof(ElemType);
     int countb = sizeof(b) / sizeof(ElemType);
@@ -355,8 +385,9 @@ int main(int argc, const char * argv[]) {
     int countc = sizeof(c)/sizeof(ElemType);
     printf("数组c：");
     for (int i = 0; i < countc; printf("%d ", c[i]), i++);
+    printf("\n");
     
-    int mov = -12;
+//    int mov = -12;
 //    Translate(c, countc, mov);
 //    printf("\nc移动%d：", mov);
 //    for (int i = 0; i < countc; printf("%d ", c[i]), i++);
@@ -365,13 +396,16 @@ int main(int argc, const char * argv[]) {
 //    printf("\nc移动%d：", mov);
 //    for (int i = 0; i < countc; printf("%d ", c[i]), i++);
     
-    TranslateArr(c, countc, mov);
-    printf("\nc移动%d：", mov);
-    for (int i = 0; i < countc; printf("%d ", c[i]), i++);
-    mov = 12;
-    TranslateArr(c, countc, mov);
-    printf("\nc移动%d：", mov);
-    for (int i = 0; i < countc; printf("%d ", c[i]), i++);
+//    TranslateArr(c, countc, mov);
+//    printf("\nc移动%d：", mov);
+//    for (int i = 0; i < countc; printf("%d ", c[i]), i++);
+//    mov = 12;
+//    TranslateArr(c, countc, mov);
+//    printf("\nc移动%d：", mov);
+//    for (int i = 0; i < countc; printf("%d ", c[i]), i++);
+    
+    printf("数组La的主元素为：");
+    printf("%d\n", MainElement(a, counta));
     
     printf("\n");
     return 0;
