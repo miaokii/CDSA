@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B8416906244DCDCD00162FE0 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = B8416905244DCDCD00162FE0 /* main.c */; };
 		E21025052440078200F77F8F /* 顺序表.c in Sources */ = {isa = PBXBuildFile; fileRef = E21025042440078200F77F8F /* 顺序表.c */; };
 		E2DF8FED24407A4500E53DDD /* 链表.c in Sources */ = {isa = PBXBuildFile; fileRef = E2DF8FEC24407A4500E53DDD /* 链表.c */; };
 		E2DF8FF8244430A200E53DDD /* 单向循环列表.c in Sources */ = {isa = PBXBuildFile; fileRef = E2DF8FF7244430A200E53DDD /* 单向循环列表.c */; };
@@ -15,6 +16,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		B8416901244DCDCD00162FE0 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		E21024FF2440078200F77F8F /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -63,6 +73,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B8416903244DCDCD00162FE0 /* 去除重复字母 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "去除重复字母"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8416905244DCDCD00162FE0 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		E21025012440078200F77F8F /* CDSA_LinearTable */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CDSA_LinearTable; sourceTree = BUILT_PRODUCTS_DIR; };
 		E21025042440078200F77F8F /* 顺序表.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "顺序表.c"; sourceTree = "<group>"; };
 		E2DF8FEA24407A4500E53DDD /* Linked list */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Linked list"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,6 +88,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		B8416900244DCDCD00162FE0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E21024FE2440078200F77F8F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -114,6 +133,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B8416904244DCDCD00162FE0 /* 去除重复字母 */ = {
+			isa = PBXGroup;
+			children = (
+				B8416905244DCDCD00162FE0 /* main.c */,
+			);
+			path = "去除重复字母";
+			sourceTree = "<group>";
+		};
 		E21024F82440078200F77F8F = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +149,7 @@
 				E2DF8FF6244430A200E53DDD /* Single Cycle Linked List */,
 				E2DF900124445FE000E53DDD /* Bothway Linked List */,
 				E2DF900C2445AE6900E53DDD /* 习题 */,
+				B8416904244DCDCD00162FE0 /* 去除重复字母 */,
 				E21025022440078200F77F8F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -134,6 +162,7 @@
 				E2DF8FF5244430A200E53DDD /* Single Cycle Linked List */,
 				E2DF900024445FE000E53DDD /* Bothway Linked List */,
 				E2DF900B2445AE6900E53DDD /* 习题 */,
+				B8416903244DCDCD00162FE0 /* 去除重复字母 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -181,6 +210,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		B8416902244DCDCD00162FE0 /* 去除重复字母 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B8416909244DCDCD00162FE0 /* Build configuration list for PBXNativeTarget "去除重复字母" */;
+			buildPhases = (
+				B84168FF244DCDCD00162FE0 /* Sources */,
+				B8416900244DCDCD00162FE0 /* Frameworks */,
+				B8416901244DCDCD00162FE0 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "去除重复字母";
+			productName = "去除重复字母";
+			productReference = B8416903244DCDCD00162FE0 /* 去除重复字母 */;
+			productType = "com.apple.product-type.tool";
+		};
 		E21025002440078200F77F8F /* CDSA_LinearTable */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E21025082440078200F77F8F /* Build configuration list for PBXNativeTarget "CDSA_LinearTable" */;
@@ -276,6 +322,9 @@
 				LastUpgradeCheck = 1140;
 				ORGANIZATIONNAME = ly;
 				TargetAttributes = {
+					B8416902244DCDCD00162FE0 = {
+						CreatedOnToolsVersion = 11.4;
+					};
 					E21025002440078200F77F8F = {
 						CreatedOnToolsVersion = 11.4;
 					};
@@ -311,11 +360,20 @@
 				E2DF8FF4244430A200E53DDD /* Single Cycle Linked List */,
 				E2DF8FFF24445FE000E53DDD /* Bothway Linked List */,
 				E2DF900A2445AE6900E53DDD /* 习题 */,
+				B8416902244DCDCD00162FE0 /* 去除重复字母 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		B84168FF244DCDCD00162FE0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8416906244DCDCD00162FE0 /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E21024FD2440078200F77F8F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -359,6 +417,26 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		B8416907244DCDCD00162FE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4YGH48HCL3;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B8416908244DCDCD00162FE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4YGH48HCL3;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		E21025062440078200F77F8F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -571,6 +649,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		B8416909244DCDCD00162FE0 /* Build configuration list for PBXNativeTarget "去除重复字母" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8416907244DCDCD00162FE0 /* Debug */,
+				B8416908244DCDCD00162FE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		E21024FC2440078200F77F8F /* Build configuration list for PBXProject "CDSA_LinearTable" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
