@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "E21025002440078200F77F8F"
-               BuildableName = "CDSA_LinearTable"
-               BlueprintName = "CDSA_LinearTable"
+               BuildableName = "&#x987a;&#x5e8f;&#x8868;"
+               BlueprintName = "&#x987a;&#x5e8f;&#x8868;"
                ReferencedContainer = "container:CDSA_LinearTable.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,8 +45,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E21025002440078200F77F8F"
-            BuildableName = "CDSA_LinearTable"
-            BlueprintName = "CDSA_LinearTable"
+            BuildableName = "&#x987a;&#x5e8f;&#x8868;"
+            BlueprintName = "&#x987a;&#x5e8f;&#x8868;"
             ReferencedContainer = "container:CDSA_LinearTable.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -62,8 +62,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E21025002440078200F77F8F"
-            BuildableName = "CDSA_LinearTable"
-            BlueprintName = "CDSA_LinearTable"
+            BuildableName = "&#x987a;&#x5e8f;&#x8868;"
+            BlueprintName = "&#x987a;&#x5e8f;&#x8868;"
             ReferencedContainer = "container:CDSA_LinearTable.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

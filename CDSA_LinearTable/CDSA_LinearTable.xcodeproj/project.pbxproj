@@ -10,6 +10,7 @@
 		B8416906244DCDCD00162FE0 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = B8416905244DCDCD00162FE0 /* main.c */; };
 		B8A5CCB8244DD70C009114EF /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = B8A5CCB7244DD70C009114EF /* main.c */; };
 		B8A5CCC3244DDF4F009114EF /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = B8A5CCC2244DDF4F009114EF /* main.c */; };
+		B8A5CCCE244F310E009114EF /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = B8A5CCCD244F310E009114EF /* main.c */; };
 		E21025052440078200F77F8F /* 顺序表.c in Sources */ = {isa = PBXBuildFile; fileRef = E21025042440078200F77F8F /* 顺序表.c */; };
 		E2DF8FED24407A4500E53DDD /* 链表.c in Sources */ = {isa = PBXBuildFile; fileRef = E2DF8FEC24407A4500E53DDD /* 链表.c */; };
 		E2DF8FF8244430A200E53DDD /* 单向循环列表.c in Sources */ = {isa = PBXBuildFile; fileRef = E2DF8FF7244430A200E53DDD /* 单向循环列表.c */; };
@@ -37,6 +38,15 @@
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 		B8A5CCBE244DDF4F009114EF /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		B8A5CCC9244F310E009114EF /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -99,15 +109,17 @@
 		B8A5CCB7244DD70C009114EF /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		B8A5CCC0244DDF4F009114EF /* 字符串匹配RK算法 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "字符串匹配RK算法"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8A5CCC2244DDF4F009114EF /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
-		E21025012440078200F77F8F /* CDSA_LinearTable */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CDSA_LinearTable; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8A5CCCB244F310E009114EF /* 栈队列习题 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "栈队列习题"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8A5CCCD244F310E009114EF /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		E21025012440078200F77F8F /* 顺序表 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "顺序表"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E21025042440078200F77F8F /* 顺序表.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "顺序表.c"; sourceTree = "<group>"; };
-		E2DF8FEA24407A4500E53DDD /* Linked list */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Linked list"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2DF8FEA24407A4500E53DDD /* 链表 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "链表"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2DF8FEC24407A4500E53DDD /* 链表.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "链表.c"; sourceTree = "<group>"; };
-		E2DF8FF5244430A200E53DDD /* Single Cycle Linked List */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Single Cycle Linked List"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2DF8FF5244430A200E53DDD /* 单项循环链表 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "单项循环链表"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2DF8FF7244430A200E53DDD /* 单向循环列表.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "单向循环列表.c"; sourceTree = "<group>"; };
-		E2DF900024445FE000E53DDD /* Bothway Linked List */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Bothway Linked List"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2DF900024445FE000E53DDD /* 双向链表 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "双向链表"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2DF900224445FE000E53DDD /* 双向列表.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "双向列表.c"; sourceTree = "<group>"; };
-		E2DF900B2445AE6900E53DDD /* 习题 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "习题"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2DF900B2445AE6900E53DDD /* 线性表习题 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "线性表习题"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2DF900D2445AE6900E53DDD /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -127,6 +139,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		B8A5CCBD244DDF4F009114EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8A5CCC8244F310E009114EF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -195,14 +214,23 @@
 			path = "字符串匹配RK算法";
 			sourceTree = "<group>";
 		};
+		B8A5CCCC244F310E009114EF /* 栈队列习题 */ = {
+			isa = PBXGroup;
+			children = (
+				B8A5CCCD244F310E009114EF /* main.c */,
+			);
+			path = "栈队列习题";
+			sourceTree = "<group>";
+		};
 		E21024F82440078200F77F8F = {
 			isa = PBXGroup;
 			children = (
-				E21025032440078200F77F8F /* Sequence list */,
-				E2DF8FEB24407A4500E53DDD /* Linked list */,
-				E2DF8FF6244430A200E53DDD /* Single Cycle Linked List */,
-				E2DF900124445FE000E53DDD /* Bothway Linked List */,
-				E2DF900C2445AE6900E53DDD /* 习题 */,
+				E21025032440078200F77F8F /* 顺序表 */,
+				E2DF8FEB24407A4500E53DDD /* 链表 */,
+				E2DF8FF6244430A200E53DDD /* 单向循环列表 */,
+				E2DF900124445FE000E53DDD /* 双向列表 */,
+				E2DF900C2445AE6900E53DDD /* 线性表习题 */,
+				B8A5CCCC244F310E009114EF /* 栈队列习题 */,
 				B8416904244DCDCD00162FE0 /* 去除重复字母 */,
 				B8A5CCB6244DD70C009114EF /* BF算法 */,
 				B8A5CCC1244DDF4F009114EF /* 字符串匹配RK算法 */,
@@ -213,56 +241,57 @@
 		E21025022440078200F77F8F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E21025012440078200F77F8F /* CDSA_LinearTable */,
-				E2DF8FEA24407A4500E53DDD /* Linked list */,
-				E2DF8FF5244430A200E53DDD /* Single Cycle Linked List */,
-				E2DF900024445FE000E53DDD /* Bothway Linked List */,
-				E2DF900B2445AE6900E53DDD /* 习题 */,
+				E21025012440078200F77F8F /* 顺序表 */,
+				E2DF8FEA24407A4500E53DDD /* 链表 */,
+				E2DF8FF5244430A200E53DDD /* 单项循环链表 */,
+				E2DF900024445FE000E53DDD /* 双向链表 */,
+				E2DF900B2445AE6900E53DDD /* 线性表习题 */,
 				B8416903244DCDCD00162FE0 /* 去除重复字母 */,
 				B8A5CCB5244DD70C009114EF /* BF */,
 				B8A5CCC0244DDF4F009114EF /* 字符串匹配RK算法 */,
+				B8A5CCCB244F310E009114EF /* 栈队列习题 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E21025032440078200F77F8F /* Sequence list */ = {
+		E21025032440078200F77F8F /* 顺序表 */ = {
 			isa = PBXGroup;
 			children = (
 				E21025042440078200F77F8F /* 顺序表.c */,
 			);
-			path = "Sequence list";
+			path = "顺序表";
 			sourceTree = "<group>";
 		};
-		E2DF8FEB24407A4500E53DDD /* Linked list */ = {
+		E2DF8FEB24407A4500E53DDD /* 链表 */ = {
 			isa = PBXGroup;
 			children = (
 				E2DF8FEC24407A4500E53DDD /* 链表.c */,
 			);
-			path = "Linked list";
+			path = "链表";
 			sourceTree = "<group>";
 		};
-		E2DF8FF6244430A200E53DDD /* Single Cycle Linked List */ = {
+		E2DF8FF6244430A200E53DDD /* 单向循环列表 */ = {
 			isa = PBXGroup;
 			children = (
 				E2DF8FF7244430A200E53DDD /* 单向循环列表.c */,
 			);
-			path = "Single Cycle Linked List";
+			path = "单向循环列表";
 			sourceTree = "<group>";
 		};
-		E2DF900124445FE000E53DDD /* Bothway Linked List */ = {
+		E2DF900124445FE000E53DDD /* 双向列表 */ = {
 			isa = PBXGroup;
 			children = (
 				E2DF900224445FE000E53DDD /* 双向列表.c */,
 			);
-			path = "Bothway Linked List";
+			path = "双向列表";
 			sourceTree = "<group>";
 		};
-		E2DF900C2445AE6900E53DDD /* 习题 */ = {
+		E2DF900C2445AE6900E53DDD /* 线性表习题 */ = {
 			isa = PBXGroup;
 			children = (
 				E2DF900D2445AE6900E53DDD /* main.c */,
 			);
-			path = "习题";
+			path = "线性表习题";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -319,9 +348,26 @@
 			productReference = B8A5CCC0244DDF4F009114EF /* 字符串匹配RK算法 */;
 			productType = "com.apple.product-type.tool";
 		};
-		E21025002440078200F77F8F /* CDSA_LinearTable */ = {
+		B8A5CCCA244F310E009114EF /* 栈队列习题 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E21025082440078200F77F8F /* Build configuration list for PBXNativeTarget "CDSA_LinearTable" */;
+			buildConfigurationList = B8A5CCCF244F310E009114EF /* Build configuration list for PBXNativeTarget "栈队列习题" */;
+			buildPhases = (
+				B8A5CCC7244F310E009114EF /* Sources */,
+				B8A5CCC8244F310E009114EF /* Frameworks */,
+				B8A5CCC9244F310E009114EF /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "栈队列习题";
+			productName = "栈队列习题";
+			productReference = B8A5CCCB244F310E009114EF /* 栈队列习题 */;
+			productType = "com.apple.product-type.tool";
+		};
+		E21025002440078200F77F8F /* 顺序表 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E21025082440078200F77F8F /* Build configuration list for PBXNativeTarget "顺序表" */;
 			buildPhases = (
 				E21024FD2440078200F77F8F /* Sources */,
 				E21024FE2440078200F77F8F /* Frameworks */,
@@ -331,14 +377,14 @@
 			);
 			dependencies = (
 			);
-			name = CDSA_LinearTable;
+			name = "顺序表";
 			productName = CDSA_LinearTable;
-			productReference = E21025012440078200F77F8F /* CDSA_LinearTable */;
+			productReference = E21025012440078200F77F8F /* 顺序表 */;
 			productType = "com.apple.product-type.tool";
 		};
-		E2DF8FE924407A4500E53DDD /* Linked list */ = {
+		E2DF8FE924407A4500E53DDD /* 链表 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E2DF8FEE24407A4500E53DDD /* Build configuration list for PBXNativeTarget "Linked list" */;
+			buildConfigurationList = E2DF8FEE24407A4500E53DDD /* Build configuration list for PBXNativeTarget "链表" */;
 			buildPhases = (
 				E2DF8FE624407A4500E53DDD /* Sources */,
 				E2DF8FE724407A4500E53DDD /* Frameworks */,
@@ -348,14 +394,14 @@
 			);
 			dependencies = (
 			);
-			name = "Linked list";
+			name = "链表";
 			productName = "Linked list";
-			productReference = E2DF8FEA24407A4500E53DDD /* Linked list */;
+			productReference = E2DF8FEA24407A4500E53DDD /* 链表 */;
 			productType = "com.apple.product-type.tool";
 		};
-		E2DF8FF4244430A200E53DDD /* Single Cycle Linked List */ = {
+		E2DF8FF4244430A200E53DDD /* 单项循环链表 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E2DF8FF9244430A200E53DDD /* Build configuration list for PBXNativeTarget "Single Cycle Linked List" */;
+			buildConfigurationList = E2DF8FF9244430A200E53DDD /* Build configuration list for PBXNativeTarget "单项循环链表" */;
 			buildPhases = (
 				E2DF8FF1244430A200E53DDD /* Sources */,
 				E2DF8FF2244430A200E53DDD /* Frameworks */,
@@ -365,14 +411,14 @@
 			);
 			dependencies = (
 			);
-			name = "Single Cycle Linked List";
+			name = "单项循环链表";
 			productName = "Single Cycle Linked List";
-			productReference = E2DF8FF5244430A200E53DDD /* Single Cycle Linked List */;
+			productReference = E2DF8FF5244430A200E53DDD /* 单项循环链表 */;
 			productType = "com.apple.product-type.tool";
 		};
-		E2DF8FFF24445FE000E53DDD /* Bothway Linked List */ = {
+		E2DF8FFF24445FE000E53DDD /* 双向链表 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E2DF900424445FE000E53DDD /* Build configuration list for PBXNativeTarget "Bothway Linked List" */;
+			buildConfigurationList = E2DF900424445FE000E53DDD /* Build configuration list for PBXNativeTarget "双向链表" */;
 			buildPhases = (
 				E2DF8FFC24445FE000E53DDD /* Sources */,
 				E2DF8FFD24445FE000E53DDD /* Frameworks */,
@@ -382,14 +428,14 @@
 			);
 			dependencies = (
 			);
-			name = "Bothway Linked List";
+			name = "双向链表";
 			productName = "Bothway Linked List";
-			productReference = E2DF900024445FE000E53DDD /* Bothway Linked List */;
+			productReference = E2DF900024445FE000E53DDD /* 双向链表 */;
 			productType = "com.apple.product-type.tool";
 		};
-		E2DF900A2445AE6900E53DDD /* 习题 */ = {
+		E2DF900A2445AE6900E53DDD /* 线性表习题 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E2DF90112445AE6900E53DDD /* Build configuration list for PBXNativeTarget "习题" */;
+			buildConfigurationList = E2DF90112445AE6900E53DDD /* Build configuration list for PBXNativeTarget "线性表习题" */;
 			buildPhases = (
 				E2DF90072445AE6900E53DDD /* Sources */,
 				E2DF90082445AE6900E53DDD /* Frameworks */,
@@ -399,9 +445,9 @@
 			);
 			dependencies = (
 			);
-			name = "习题";
+			name = "线性表习题";
 			productName = "习题";
-			productReference = E2DF900B2445AE6900E53DDD /* 习题 */;
+			productReference = E2DF900B2445AE6900E53DDD /* 线性表习题 */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -421,6 +467,9 @@
 						CreatedOnToolsVersion = 11.4.1;
 					};
 					B8A5CCBF244DDF4F009114EF = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					B8A5CCCA244F310E009114EF = {
 						CreatedOnToolsVersion = 11.4.1;
 					};
 					E21025002440078200F77F8F = {
@@ -453,14 +502,15 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E21025002440078200F77F8F /* CDSA_LinearTable */,
-				E2DF8FE924407A4500E53DDD /* Linked list */,
-				E2DF8FF4244430A200E53DDD /* Single Cycle Linked List */,
-				E2DF8FFF24445FE000E53DDD /* Bothway Linked List */,
-				E2DF900A2445AE6900E53DDD /* 习题 */,
+				E21025002440078200F77F8F /* 顺序表 */,
+				E2DF8FE924407A4500E53DDD /* 链表 */,
+				E2DF8FF4244430A200E53DDD /* 单项循环链表 */,
+				E2DF8FFF24445FE000E53DDD /* 双向链表 */,
+				E2DF900A2445AE6900E53DDD /* 线性表习题 */,
 				B8416902244DCDCD00162FE0 /* 去除重复字母 */,
 				B8A5CCB4244DD70C009114EF /* BF */,
 				B8A5CCBF244DDF4F009114EF /* 字符串匹配RK算法 */,
+				B8A5CCCA244F310E009114EF /* 栈队列习题 */,
 			);
 		};
 /* End PBXProject section */
@@ -487,6 +537,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				B8A5CCC3244DDF4F009114EF /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8A5CCC7244F310E009114EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8A5CCCE244F310E009114EF /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -578,6 +636,22 @@
 			name = Debug;
 		};
 		B8A5CCC6244DDF4F009114EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B8A5CCD0244F310E009114EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B8A5CCD1244F310E009114EF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -824,6 +898,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		B8A5CCCF244F310E009114EF /* Build configuration list for PBXNativeTarget "栈队列习题" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8A5CCD0244F310E009114EF /* Debug */,
+				B8A5CCD1244F310E009114EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		E21024FC2440078200F77F8F /* Build configuration list for PBXProject "CDSA_LinearTable" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -833,7 +916,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E21025082440078200F77F8F /* Build configuration list for PBXNativeTarget "CDSA_LinearTable" */ = {
+		E21025082440078200F77F8F /* Build configuration list for PBXNativeTarget "顺序表" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E21025092440078200F77F8F /* Debug */,
@@ -842,7 +925,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E2DF8FEE24407A4500E53DDD /* Build configuration list for PBXNativeTarget "Linked list" */ = {
+		E2DF8FEE24407A4500E53DDD /* Build configuration list for PBXNativeTarget "链表" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E2DF8FEF24407A4500E53DDD /* Debug */,
@@ -851,7 +934,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E2DF8FF9244430A200E53DDD /* Build configuration list for PBXNativeTarget "Single Cycle Linked List" */ = {
+		E2DF8FF9244430A200E53DDD /* Build configuration list for PBXNativeTarget "单项循环链表" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E2DF8FFA244430A200E53DDD /* Debug */,
@@ -860,7 +943,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E2DF900424445FE000E53DDD /* Build configuration list for PBXNativeTarget "Bothway Linked List" */ = {
+		E2DF900424445FE000E53DDD /* Build configuration list for PBXNativeTarget "双向链表" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E2DF900524445FE000E53DDD /* Debug */,
@@ -869,7 +952,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E2DF90112445AE6900E53DDD /* Build configuration list for PBXNativeTarget "习题" */ = {
+		E2DF90112445AE6900E53DDD /* Build configuration list for PBXNativeTarget "线性表习题" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E2DF900F2445AE6900E53DDD /* Debug */,
