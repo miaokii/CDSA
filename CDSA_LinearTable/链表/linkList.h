@@ -1,14 +1,13 @@
 //
-//  链表.h
+//  linkList.h
 //  链表
 //
 //  Created by miaokii on 2020/4/30.
 //  Copyright © 2020 ly. All rights reserved.
 //
 
-
-#ifndef ___h
-#define ___h
+#ifndef linkList_h
+#define linkList_h
 
 #include <stdio.h>
 #include "publicDefine.h"
@@ -71,4 +70,5 @@ void ListCreateHead(LinkList *L, int n);
 /// @param n 随机产生n个元素值，建立带有头结点的单链表L
 void ListCreateTail(LinkList *L, int n);
 
-#endif /* ___h */
+
+#endif /* linkList_h */

@@ -1,24 +1,24 @@
 //
-//  链表栈.h
+//  linkStack.h
 //  栈和队列
 //
 //  Created by miaokii on 2020/4/30.
 //  Copyright © 2020 ly. All rights reserved.
 //
 
-#ifndef ____h
-#define ____h
+#ifndef linkStack_h
+#define linkStack_h
 
 #include <stdio.h>
-#include "publicDefine.h"
-#include "链表.h"
+#include "linkList.h"
 
+/// 链表栈
 typedef struct {
     /// 栈顶
     LinkList top;
     /// 栈元素个数
     int count;
-} LinkStack;
+}LinkStack;
 
 /// 创建一个空栈
 Status InitLinkStack(LinkStack *s);
@@ -44,4 +44,5 @@ Status PopLinkStack(LinkStack *s, ElemType *e);
 /// 打印栈，从栈底到栈顶
 void LinkStackPrint(LinkStack s);
 
-#endif /* ____h */
+
+#endif /* linkStack_h */

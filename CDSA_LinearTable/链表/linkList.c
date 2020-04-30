@@ -1,14 +1,13 @@
 //
-//  链表.c
+//  linkList.c
 //  链表
 //
 //  Created by miaokii on 2020/4/30.
 //  Copyright © 2020 ly. All rights reserved.
 //
 
-#include "链表.h"
+#include "linkList.h"
 #include "stdlib.h"
-
 /**
     创建单链表
  */

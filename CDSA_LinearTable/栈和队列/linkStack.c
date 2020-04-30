@@ -1,12 +1,12 @@
 //
-//  链表栈.c
+//  linkStack.c
 //  栈和队列
 //
 //  Created by miaokii on 2020/4/30.
 //  Copyright © 2020 ly. All rights reserved.
 //
 
-#include "链表栈.h"
+#include "linkStack.h"
 #include "stdlib.h"
 
 /// 创建一个空栈

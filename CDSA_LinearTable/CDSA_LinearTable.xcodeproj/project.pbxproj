@@ -13,14 +13,14 @@
 		B8A5CCC3244DDF4F009114EF /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = B8A5CCC2244DDF4F009114EF /* main.c */; };
 		B8A5CCCE244F310E009114EF /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = B8A5CCCD244F310E009114EF /* main.c */; };
 		E21025052440078200F77F8F /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = E21025042440078200F77F8F /* main.c */; };
-		E27851A4245A756200736D43 /* 顺序栈.c in Sources */ = {isa = PBXBuildFile; fileRef = E27851A3245A756200736D43 /* 顺序栈.c */; };
-		E27851A7245A757400736D43 /* 链表栈.c in Sources */ = {isa = PBXBuildFile; fileRef = E27851A6245A757400736D43 /* 链表栈.c */; };
-		E27851AB245A98DF00736D43 /* 链表.c in Sources */ = {isa = PBXBuildFile; fileRef = E27851AA245A98DF00736D43 /* 链表.c */; };
 		E27851AE245A9FFD00736D43 /* 顺序表.c in Sources */ = {isa = PBXBuildFile; fileRef = E27851AD245A9FFD00736D43 /* 顺序表.c */; };
 		E2DF8FED24407A4500E53DDD /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = E2DF8FEC24407A4500E53DDD /* main.c */; };
 		E2DF8FF8244430A200E53DDD /* 单向循环列表.c in Sources */ = {isa = PBXBuildFile; fileRef = E2DF8FF7244430A200E53DDD /* 单向循环列表.c */; };
 		E2DF900324445FE000E53DDD /* 双向列表.c in Sources */ = {isa = PBXBuildFile; fileRef = E2DF900224445FE000E53DDD /* 双向列表.c */; };
 		E2DF900E2445AE6900E53DDD /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = E2DF900D2445AE6900E53DDD /* main.c */; };
+		E2F18F22245AD1460046F448 /* linkStack.c in Sources */ = {isa = PBXBuildFile; fileRef = E2F18F21245AD1460046F448 /* linkStack.c */; };
+		E2F18F25245AD15A0046F448 /* linkList.c in Sources */ = {isa = PBXBuildFile; fileRef = E2F18F24245AD15A0046F448 /* linkList.c */; };
+		E2F18F28245AD2490046F448 /* seqStack.c in Sources */ = {isa = PBXBuildFile; fileRef = E2F18F27245AD2490046F448 /* seqStack.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -129,13 +129,7 @@
 		B8A5CCCD244F310E009114EF /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		E21025012440078200F77F8F /* 顺序表 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "顺序表"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E21025042440078200F77F8F /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
-		E27851A2245A756200736D43 /* 顺序栈.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "顺序栈.h"; sourceTree = "<group>"; };
-		E27851A3245A756200736D43 /* 顺序栈.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "顺序栈.c"; sourceTree = "<group>"; };
-		E27851A5245A757400736D43 /* 链表栈.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "链表栈.h"; sourceTree = "<group>"; };
-		E27851A6245A757400736D43 /* 链表栈.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "链表栈.c"; sourceTree = "<group>"; };
 		E27851A8245A826300736D43 /* publicDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = publicDefine.h; sourceTree = "<group>"; };
-		E27851A9245A98DF00736D43 /* 链表.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "链表.h"; sourceTree = "<group>"; };
-		E27851AA245A98DF00736D43 /* 链表.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "链表.c"; sourceTree = "<group>"; };
 		E27851AC245A9FFD00736D43 /* 顺序表.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "顺序表.h"; sourceTree = "<group>"; };
 		E27851AD245A9FFD00736D43 /* 顺序表.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "顺序表.c"; sourceTree = "<group>"; };
 		E2DF8FEA24407A4500E53DDD /* 链表 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "链表"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -146,6 +140,12 @@
 		E2DF900224445FE000E53DDD /* 双向列表.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "双向列表.c"; sourceTree = "<group>"; };
 		E2DF900B2445AE6900E53DDD /* 线性表习题 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "线性表习题"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2DF900D2445AE6900E53DDD /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		E2F18F20245AD1460046F448 /* linkStack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = linkStack.h; sourceTree = "<group>"; };
+		E2F18F21245AD1460046F448 /* linkStack.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = linkStack.c; sourceTree = "<group>"; };
+		E2F18F23245AD15A0046F448 /* linkList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = linkList.h; sourceTree = "<group>"; };
+		E2F18F24245AD15A0046F448 /* linkList.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = linkList.c; sourceTree = "<group>"; };
+		E2F18F26245AD2490046F448 /* seqStack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = seqStack.h; sourceTree = "<group>"; };
+		E2F18F27245AD2490046F448 /* seqStack.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = seqStack.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -226,10 +226,10 @@
 			isa = PBXGroup;
 			children = (
 				B80721FA244F4990007A9FE0 /* main.c */,
-				E27851A2245A756200736D43 /* 顺序栈.h */,
-				E27851A3245A756200736D43 /* 顺序栈.c */,
-				E27851A5245A757400736D43 /* 链表栈.h */,
-				E27851A6245A757400736D43 /* 链表栈.c */,
+				E2F18F26245AD2490046F448 /* seqStack.h */,
+				E2F18F27245AD2490046F448 /* seqStack.c */,
+				E2F18F20245AD1460046F448 /* linkStack.h */,
+				E2F18F21245AD1460046F448 /* linkStack.c */,
 			);
 			path = "栈和队列";
 			sourceTree = "<group>";
@@ -315,8 +315,8 @@
 			isa = PBXGroup;
 			children = (
 				E2DF8FEC24407A4500E53DDD /* main.c */,
-				E27851A9245A98DF00736D43 /* 链表.h */,
-				E27851AA245A98DF00736D43 /* 链表.c */,
+				E2F18F23245AD15A0046F448 /* linkList.h */,
+				E2F18F24245AD15A0046F448 /* linkList.c */,
 			);
 			path = "链表";
 			sourceTree = "<group>";
@@ -592,9 +592,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E27851A7245A757400736D43 /* 链表栈.c in Sources */,
+				E2F18F22245AD1460046F448 /* linkStack.c in Sources */,
 				B80721FB244F4990007A9FE0 /* main.c in Sources */,
-				E27851A4245A756200736D43 /* 顺序栈.c in Sources */,
+				E2F18F28245AD2490046F448 /* seqStack.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -643,8 +643,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2F18F25245AD15A0046F448 /* linkList.c in Sources */,
 				E2DF8FED24407A4500E53DDD /* main.c in Sources */,
-				E27851AB245A98DF00736D43 /* 链表.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

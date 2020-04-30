@@ -1,12 +1,12 @@
 //
-//  顺序栈.c
+//  seqStack.c
 //  栈和队列
 //
 //  Created by miaokii on 2020/4/30.
 //  Copyright © 2020 ly. All rights reserved.
 //
 
-#include "顺序栈.h"
+#include "seqStack.h"
 #include "stdlib.h"
 #include "math.h"
 #include "time.h"

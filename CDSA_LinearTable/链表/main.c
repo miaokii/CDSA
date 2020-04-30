@@ -9,7 +9,7 @@
 #include <stdio.h>
 #include "stdlib.h"
 #include "time.h"
-#include "链表.h"
+#include "linkList.h"
 #include "顺序表.h"
 
 typedef int Status;

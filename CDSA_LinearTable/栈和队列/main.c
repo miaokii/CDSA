@@ -8,8 +8,8 @@
 
 #include <stdio.h>
 #include "stdlib.h"
-#include "顺序栈.h"
-#include "链表栈.h"
+#include "seqStack.h"
+#include "linkStack.h"
 
 int main(int argc, const char * argv[]) {
     
@@ -50,7 +50,37 @@ int main(int argc, const char * argv[]) {
     
     printf("======= 链表栈 =======\n");
     
+    LinkStack stack2;
+    InitLinkStack(&stack2);
     
+    for (int i = 1; i < 10; i++) {
+        e = arc4random() % 100;
+        printf("入栈：%d\n", e);
+        PushLinkStack(&stack2, e);
+    }
+    
+    printf("打印栈stack2：");
+    LinkStackPrint(stack2);
+    
+    printf("stack2是否为空：%d\n", LinkStackLength(stack2));
+    printf("stack2长度：%d\n", LinkStackLength(stack2));
+    
+    GetLinkStackTop(stack2, &e);
+    printf("stack2栈顶元素：%d\n", e);
+    
+    PopLinkStack(&stack2, &e);
+    printf("stack2出栈：%d\n", e);
+    
+    PopLinkStack(&stack2, &e);
+    printf("stack2出栈：%d\n", e);
+    
+    printf("打印栈stack2：");
+    LinkStackPrint(stack2);
+    
+    printf("清空stack2\n");
+    ClearLinkStack(&stack2);
+    printf("打印栈stack2：");
+    LinkStackPrint(stack2);
     
     printf("\n");
     return 0;

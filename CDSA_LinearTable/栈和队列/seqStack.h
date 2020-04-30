@@ -1,19 +1,18 @@
 //
-//  顺序栈.h
+//  seqStack.h
 //  栈和队列
 //
 //  Created by miaokii on 2020/4/30.
 //  Copyright © 2020 ly. All rights reserved.
 //
 
-#ifndef ____h
-#define ____h
+#ifndef seqStack_h
+#define seqStack_h
 
 #include <stdio.h>
 #include "publicDefine.h"
 
-
-// MARK: - 使用顺序表结构实现栈
+/// 顺序栈
 typedef struct {
     /// 顺序表
     ElemType data[MAXSIZE];
@@ -45,4 +44,4 @@ Status PopSeqStack(SeqStack *s, ElemType *e);
 /// 打印栈，从栈底到栈顶
 void SeqStackPrint(SeqStack s);
 
-#endif /* ____h */
+#endif /* seqStack_h */
