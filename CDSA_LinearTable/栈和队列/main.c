@@ -11,14 +11,14 @@
 #include "seqStack.h"
 #include "linkStack.h"
 
-int main(int argc, const char * argv[]) {
-    
+
+void test_seqStack() {
     printf("======= 顺序栈 =======\n");
     
     SeqStack Stack1;
     InitSeqStack(&Stack1);
-    
     ElemType e;
+    
     for (int i = 1; i < 10; i++) {
         e = arc4random() % 100;
         printf("入栈：%d\n", e);
@@ -47,11 +47,14 @@ int main(int argc, const char * argv[]) {
     
     printf("打印栈：");
     SeqStackPrint(Stack1);
-    
+}
+
+void test_linkStack() {
     printf("======= 链表栈 =======\n");
     
     LinkStack stack2;
     InitLinkStack(&stack2);
+    ElemType e;
     
     for (int i = 1; i < 10; i++) {
         e = arc4random() % 100;
@@ -81,6 +84,12 @@ int main(int argc, const char * argv[]) {
     ClearLinkStack(&stack2);
     printf("打印栈stack2：");
     LinkStackPrint(stack2);
+}
+
+int main(int argc, const char * argv[]) {
+    
+    test_seqStack();
+    test_linkStack();
     
     printf("\n");
     return 0;
