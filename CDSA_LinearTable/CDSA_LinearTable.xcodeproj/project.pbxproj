@@ -12,6 +12,9 @@
 		B8A5CCB8244DD70C009114EF /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = B8A5CCB7244DD70C009114EF /* main.c */; };
 		B8A5CCC3244DDF4F009114EF /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = B8A5CCC2244DDF4F009114EF /* main.c */; };
 		B8A5CCCE244F310E009114EF /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = B8A5CCCD244F310E009114EF /* main.c */; };
+		B8A5CCD924506A17009114EF /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = B8A5CCD824506A17009114EF /* main.c */; };
+		B8A5CCE424530CB0009114EF /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = B8A5CCE324530CB0009114EF /* main.c */; };
+		B8A5CCEF2459A4C3009114EF /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = B8A5CCEE2459A4C3009114EF /* main.c */; };
 		E21025052440078200F77F8F /* 顺序表.c in Sources */ = {isa = PBXBuildFile; fileRef = E21025042440078200F77F8F /* 顺序表.c */; };
 		E2DF8FED24407A4500E53DDD /* 链表.c in Sources */ = {isa = PBXBuildFile; fileRef = E2DF8FEC24407A4500E53DDD /* 链表.c */; };
 		E2DF8FF8244430A200E53DDD /* 单向循环列表.c in Sources */ = {isa = PBXBuildFile; fileRef = E2DF8FF7244430A200E53DDD /* 单向循环列表.c */; };
@@ -57,6 +60,33 @@
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 		B8A5CCC9244F310E009114EF /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		B8A5CCD424506A17009114EF /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		B8A5CCDF24530CB0009114EF /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		B8A5CCEA2459A4C3009114EF /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -123,6 +153,12 @@
 		B8A5CCC2244DDF4F009114EF /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		B8A5CCCB244F310E009114EF /* 栈队列习题 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "栈队列习题"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8A5CCCD244F310E009114EF /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		B8A5CCD624506A17009114EF /* KMP算法 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "KMP算法"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8A5CCD824506A17009114EF /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		B8A5CCE124530CB0009114EF /* 二叉树 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "二叉树"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8A5CCE324530CB0009114EF /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		B8A5CCEC2459A4C3009114EF /* 图 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "图"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8A5CCEE2459A4C3009114EF /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		E21025012440078200F77F8F /* 顺序表 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "顺序表"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E21025042440078200F77F8F /* 顺序表.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "顺序表.c"; sourceTree = "<group>"; };
 		E2DF8FEA24407A4500E53DDD /* 链表 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "链表"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -165,6 +201,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		B8A5CCC8244F310E009114EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8A5CCD324506A17009114EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8A5CCDE24530CB0009114EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8A5CCE92459A4C3009114EF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -249,6 +306,30 @@
 			path = "栈队列习题";
 			sourceTree = "<group>";
 		};
+		B8A5CCD724506A17009114EF /* KMP算法 */ = {
+			isa = PBXGroup;
+			children = (
+				B8A5CCD824506A17009114EF /* main.c */,
+			);
+			path = "KMP算法";
+			sourceTree = "<group>";
+		};
+		B8A5CCE224530CB0009114EF /* 二叉树 */ = {
+			isa = PBXGroup;
+			children = (
+				B8A5CCE324530CB0009114EF /* main.c */,
+			);
+			path = "二叉树";
+			sourceTree = "<group>";
+		};
+		B8A5CCED2459A4C3009114EF /* 图 */ = {
+			isa = PBXGroup;
+			children = (
+				B8A5CCEE2459A4C3009114EF /* main.c */,
+			);
+			path = "图";
+			sourceTree = "<group>";
+		};
 		E21024F82440078200F77F8F = {
 			isa = PBXGroup;
 			children = (
@@ -262,6 +343,9 @@
 				B8416904244DCDCD00162FE0 /* 去除重复字母 */,
 				B8A5CCB6244DD70C009114EF /* BF算法 */,
 				B8A5CCC1244DDF4F009114EF /* 字符串匹配RK算法 */,
+				B8A5CCD724506A17009114EF /* KMP算法 */,
+				B8A5CCE224530CB0009114EF /* 二叉树 */,
+				B8A5CCED2459A4C3009114EF /* 图 */,
 				E21025022440078200F77F8F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -279,6 +363,9 @@
 				B8A5CCC0244DDF4F009114EF /* 字符串匹配RK算法 */,
 				B8A5CCCB244F310E009114EF /* 栈队列习题 */,
 				B80721F8244F4990007A9FE0 /* 栈和队列 */,
+				B8A5CCD624506A17009114EF /* KMP算法 */,
+				B8A5CCE124530CB0009114EF /* 二叉树 */,
+				B8A5CCEC2459A4C3009114EF /* 图 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -411,6 +498,57 @@
 			productReference = B8A5CCCB244F310E009114EF /* 栈队列习题 */;
 			productType = "com.apple.product-type.tool";
 		};
+		B8A5CCD524506A17009114EF /* KMP算法 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B8A5CCDC24506A17009114EF /* Build configuration list for PBXNativeTarget "KMP算法" */;
+			buildPhases = (
+				B8A5CCD224506A17009114EF /* Sources */,
+				B8A5CCD324506A17009114EF /* Frameworks */,
+				B8A5CCD424506A17009114EF /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "KMP算法";
+			productName = "KMP算法";
+			productReference = B8A5CCD624506A17009114EF /* KMP算法 */;
+			productType = "com.apple.product-type.tool";
+		};
+		B8A5CCE024530CB0009114EF /* 二叉树 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B8A5CCE524530CB0009114EF /* Build configuration list for PBXNativeTarget "二叉树" */;
+			buildPhases = (
+				B8A5CCDD24530CB0009114EF /* Sources */,
+				B8A5CCDE24530CB0009114EF /* Frameworks */,
+				B8A5CCDF24530CB0009114EF /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "二叉树";
+			productName = "二叉树";
+			productReference = B8A5CCE124530CB0009114EF /* 二叉树 */;
+			productType = "com.apple.product-type.tool";
+		};
+		B8A5CCEB2459A4C3009114EF /* 图 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B8A5CCF02459A4C3009114EF /* Build configuration list for PBXNativeTarget "图" */;
+			buildPhases = (
+				B8A5CCE82459A4C3009114EF /* Sources */,
+				B8A5CCE92459A4C3009114EF /* Frameworks */,
+				B8A5CCEA2459A4C3009114EF /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "图";
+			productName = "图";
+			productReference = B8A5CCEC2459A4C3009114EF /* 图 */;
+			productType = "com.apple.product-type.tool";
+		};
 		E21025002440078200F77F8F /* 顺序表 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E21025082440078200F77F8F /* Build configuration list for PBXNativeTarget "顺序表" */;
@@ -521,6 +659,15 @@
 					B8A5CCCA244F310E009114EF = {
 						CreatedOnToolsVersion = 11.4.1;
 					};
+					B8A5CCD524506A17009114EF = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					B8A5CCE024530CB0009114EF = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					B8A5CCEB2459A4C3009114EF = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
 					E21025002440078200F77F8F = {
 						CreatedOnToolsVersion = 11.4;
 					};
@@ -561,6 +708,9 @@
 				B8A5CCBF244DDF4F009114EF /* 字符串匹配RK算法 */,
 				B8A5CCCA244F310E009114EF /* 栈队列习题 */,
 				B80721F7244F4990007A9FE0 /* 栈和队列 */,
+				B8A5CCD524506A17009114EF /* KMP算法 */,
+				B8A5CCE024530CB0009114EF /* 二叉树 */,
+				B8A5CCEB2459A4C3009114EF /* 图 */,
 			);
 		};
 /* End PBXProject section */
@@ -603,6 +753,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				B8A5CCCE244F310E009114EF /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8A5CCD224506A17009114EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8A5CCD924506A17009114EF /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8A5CCDD24530CB0009114EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8A5CCE424530CB0009114EF /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8A5CCE82459A4C3009114EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8A5CCEF2459A4C3009114EF /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -730,6 +904,54 @@
 			name = Debug;
 		};
 		B8A5CCD1244F310E009114EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B8A5CCDA24506A17009114EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B8A5CCDB24506A17009114EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B8A5CCE624530CB0009114EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B8A5CCE724530CB0009114EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B8A5CCF12459A4C3009114EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B8A5CCF22459A4C3009114EF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -990,6 +1212,33 @@
 			buildConfigurations = (
 				B8A5CCD0244F310E009114EF /* Debug */,
 				B8A5CCD1244F310E009114EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B8A5CCDC24506A17009114EF /* Build configuration list for PBXNativeTarget "KMP算法" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8A5CCDA24506A17009114EF /* Debug */,
+				B8A5CCDB24506A17009114EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B8A5CCE524530CB0009114EF /* Build configuration list for PBXNativeTarget "二叉树" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8A5CCE624530CB0009114EF /* Debug */,
+				B8A5CCE724530CB0009114EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B8A5CCF02459A4C3009114EF /* Build configuration list for PBXNativeTarget "图" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8A5CCF12459A4C3009114EF /* Debug */,
+				B8A5CCF22459A4C3009114EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
