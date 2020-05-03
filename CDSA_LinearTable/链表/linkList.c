@@ -1,40 +1,27 @@
 //
-//  main.c
-//  Linked list
+//  linkList.c
+//  链表
 //
-//  Created by miaokii on 2020/4/10.
+//  Created by miaokii on 2020/4/30.
 //  Copyright © 2020 ly. All rights reserved.
 //
 
-#include <stdio.h>
+#include "linkList.h"
 #include "stdlib.h"
-#include "time.h"
-
-#define OK 1
-#define Error -1
-
-typedef int Status;
-typedef int ElemType;
-
-typedef struct Node {
-    ElemType data;
-    struct Node * next;
-}Node, * LinkList;
-
-/*
+/**
     创建单链表
  */
 Status InitList(LinkList *L) {
     // 头节点，L指向头节点
     *L = (LinkList)malloc(sizeof(Node));
     // 存储空间分配失败
-    if (*L==NULL) return Error;
+    if (*L==NULL) return ERROR;
     // 头节点指针域为空
     (*L)->next = NULL;
     return OK;
 }
 
-/*
+/**
     打印链表
  */
 void ListPrint(LinkList L) {
@@ -47,7 +34,7 @@ void ListPrint(LinkList L) {
     printf("\n");
 }
 
-/*
+/**
     单链表插入
     初始条件：L已经存在，且 1 < i
     操作结果：L第i个位置插入新节点e
@@ -62,7 +49,7 @@ Status ListInsert(LinkList *L, int i, ElemType e) {
         j += 1;
     }
     // 第i个元素不存在
-    if (j > i || !p) return Error;
+    if (j > i || !p) return ERROR;
     
     // 新节点
     LinkList s = (LinkList)malloc(sizeof(Node));
@@ -74,7 +61,7 @@ Status ListInsert(LinkList *L, int i, ElemType e) {
     return OK;
 }
 
-/*
+/**
     单链表取值
     初始条件：L存在，且1<=i<=length
     操作结果：通过e返回第i个元素
@@ -89,12 +76,12 @@ Status GetElem(LinkList L, int i, ElemType *e) {
         j++;
     }
     
-    if (!p || j > i) return Error;
+    if (!p || j > i) return ERROR;
     *e = p->data;
     return OK;
 }
 
-/*
+/**
     删除单链表元素
     初始条件：L存在，且1<=i<=length
     操作结果：删除L第i个元素，并返回e的值
@@ -111,7 +98,7 @@ Status ListDelete(LinkList *L, int i, ElemType *e) {
         j++;
     }
     // 如果i>n或者i<1，删除位置不合理
-    if (!(p->next) || j > i-1) return Error;
+    if (!(p->next) || j > i-1) return ERROR;
     // temp指向被删除的节点
     temp = p->next;
     // temp的后继节点给p的后继
@@ -123,7 +110,7 @@ Status ListDelete(LinkList *L, int i, ElemType *e) {
     return OK;
 }
 
-/*
+/**
     清空链表
  */
 Status ListClear(LinkList *L) {
@@ -139,7 +126,7 @@ Status ListClear(LinkList *L) {
     return OK;
 }
 
-/*
+/**
     单链表前插法
     随机产生n个元素值，建立带有头结点的单链表L
  */
@@ -162,7 +149,7 @@ void ListCreateHead(LinkList *L, int n) {
     }
 }
 
-/*
+/**
     单链表后插法
  */
 void ListCreateTail(LinkList *L, int n) {
@@ -179,44 +166,4 @@ void ListCreateTail(LinkList *L, int n) {
         t->next = p;
         t = p;
     }
-}
-
-int main(int argc, const char * argv[]) {
-    LinkList L;
-    Status iStatus;
-    iStatus = InitList(&L);
-    printf("L 是否初始化成功?（0：失败,1：成功）： %d\n",iStatus);
-    
-    for (int i = 1; i <= 8; i++) {
-        ListInsert(&L, i, i);
-    }
-    printf("L 插入后：");
-    ListPrint(L);
-    
-    int i = 8;
-    ElemType e;
-    GetElem(L, i, &e);
-    printf("L 第%d个节点值：%d\n", i, e);
-    
-    int j = 10;
-    ElemType e1;
-    ListDelete(&L, j, &e1);
-    printf("L 删除第%d个节点，该节点值为：%d，删除后L：", j, e1);
-    ListPrint(L);
-    
-    ListClear(&L);
-    printf("L 删除所有节点，删除后L：");
-    ListPrint(L);
-    
-    ListCreateHead(&L, 10);
-    printf("前插法创建L随机链表：");
-    ListPrint(L);
-    
-    ListClear(&L);
-    
-    ListCreateTail(&L, 10);
-    printf("尾插法创建L随机链表：");
-    ListPrint(L);
-    
-    return 0;
 }

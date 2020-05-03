@@ -8,92 +8,89 @@
 
 #include <stdio.h>
 #include "stdlib.h"
-#include "math.h"
-#include "time.h"
+#include "seqStack.h"
+#include "linkStack.h"
 
 
-#define OK 1
-#define ERROR -1
-#define TRUE 1
-#define FALSE 0
-/// 存储空间默认分配大小
-#define MAXSIZE 20
-
-typedef int Status;
-typedef int ElemType;
-
-// MARK: - 使用顺序表结构实现栈
-typedef struct {
-    ElemType data[MAXSIZE];
-    /// 栈顶指针
-    int top;
-}SqStack;
-
-/// 创建一个空栈
-Status InitStack(SqStack *s) {
-    /*
-     顺序表中的元素不用初始化，用的时候初始化
-     */
-    s->top = -1;
-    return OK;
-}
-
-/// 将栈置空
-Status ClearStack(SqStack *s) {
-    // 不需要将data清空
-    s->top = -1;
-    return OK;
-}
-
-/// 判断是否为空栈
-Status StackEmpty(SqStack s) {
-    if (s.top == -1)
-        return TRUE;
-    else
-        return FALSE;
-}
-
-/// 返回栈的长度
-int StackLength(SqStack s) {
-    return s.top + 1;
-}
-
-/// 获取栈顶元素
-Status GetTop(SqStack s, ElemType *e) {
-    if (s.top == -1) return ERROR;
-    *e = s.data[s.top];
-    return OK;
-}
-
-/// 向栈中插入一个元素，入栈
-Status PushStack(SqStack *s, ElemType e) {
-    // 满了
-    if (s->top == MAXSIZE - 1) return ERROR;
-    s->top += 1;
-    s->data[s->top] = e;
-    return OK;
-}
-
-/// 出栈
-Status PopStack(SqStack *s, ElemType *e) {
-    // 空栈
-    if (s->top == -1) return ERROR;
-    *e = s->data[s->top];
-    s->top -= 1;
-    return OK;
-}
-
-/// 打印栈，从栈底到栈顶
-void StackPrint(SqStack s) {
-    int i = 0;
-    while (i <= s.top) {
-        printf("%d ", s.data[i]);
+void test_seqStack() {
+    printf("======= 顺序栈 =======\n");
+    
+    SeqStack Stack1;
+    InitSeqStack(&Stack1);
+    ElemType e;
+    
+    for (int i = 1; i < 10; i++) {
+        e = arc4random() % 100;
+        printf("入栈：%d\n", e);
+        PushSeqStack(&Stack1, e);
     }
-    printf("\n");
+    
+    printf("打印栈stack1：");
+    SeqStackPrint(Stack1);
+    
+    printf("stack1长度：%d\n", SeqStackLength(Stack1));
+    printf("stack1为空？：%d", SeqStackEmpty(Stack1));
+    
+    GetSeqStackTop(Stack1, &e);
+    printf("\n获取栈顶元素：%d", e);
+    
+    PopSeqStack(&Stack1, &e);
+    printf("\n出栈：%d", e);
+    
+    GetSeqStackTop(Stack1, &e);
+    printf("\n获取栈顶元素：%d", e);
+    
+    printf("\nstack1长度：%d\n", SeqStackLength(Stack1));
+    
+    ClearSeqStack(&Stack1);
+    printf("将栈置空");
+    
+    printf("打印栈：");
+    SeqStackPrint(Stack1);
+}
+
+void test_linkStack() {
+    printf("======= 链表栈 =======\n");
+    
+    LinkStack stack2;
+    InitLinkStack(&stack2);
+    ElemType e;
+    
+    for (int i = 1; i < 10; i++) {
+        e = arc4random() % 100;
+        printf("入栈：%d\n", e);
+        PushLinkStack(&stack2, e);
+    }
+    
+    printf("打印栈stack2：");
+    LinkStackPrint(stack2);
+    
+    printf("stack2是否为空：%d\n", LinkStackLength(stack2));
+    printf("stack2长度：%d\n", LinkStackLength(stack2));
+    
+    GetLinkStackTop(stack2, &e);
+    printf("stack2栈顶元素：%d\n", e);
+    
+    PopLinkStack(&stack2, &e);
+    printf("stack2出栈：%d\n", e);
+    
+    PopLinkStack(&stack2, &e);
+    printf("stack2出栈：%d\n", e);
+    
+    printf("打印栈stack2：");
+    LinkStackPrint(stack2);
+    
+    printf("清空stack2\n");
+    ClearLinkStack(&stack2);
+    printf("打印栈stack2：");
+    LinkStackPrint(stack2);
 }
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    printf("Hello, World!\n");
+    
+    test_seqStack();
+    test_linkStack();
+    
+    printf("\n");
     return 0;
 }
