@@ -11,14 +11,16 @@
 
 #include <stdio.h>
 #include "SeqGroup.h"
-
+#include "LinkGroup.h"
 
 /* 深度优先遍历 */
 
 /* 右手原则 */
 
-
 void makeAMGraph(MGraph *G);
 void DFSSeqTravese(MGraph G);
+
+void makeLinkGraph(GraphLink *G);
+void DFSLinkGraph(GraphLink G);
 
 #endif /* DFS_h */

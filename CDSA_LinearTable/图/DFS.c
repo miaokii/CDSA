@@ -7,6 +7,7 @@
 //
 
 #include "DFS.h"
+#include "stdlib.h"
 
 typedef int BOOL;
 #define FALSE 0
@@ -76,9 +77,11 @@ void makeAMGraph(MGraph *G) {
 }
 
 void DFS(MGraph G, int i) {
+    // i位置已经被访问
     visited[i] = TRUE;
     printf("%c", G.vexs[i]);
     
+    // 遍历每个邻接顶点
     for (int j = 0; j < G.numNodes; j++) {
         if (G.arc[i][j] == 1 && !visited[j])
             DFS(G, j);
@@ -96,5 +99,72 @@ void DFSSeqTravese(MGraph G) {
         if (!visited[i]) {
             DFS(G, i);
         }
+    }
+}
+
+
+void makeLinkGraph(GraphLink *G) {
+    MGraph Mg;
+    makeAMGraph(&Mg);
+    
+    *G = (GraphLink)malloc(sizeof(GraphLink));
+    (*G)->arc_num = Mg.numEdges;
+    (*G)->node_num = Mg.numNodes;
+    
+    // 从邻接矩阵中输入顶点信息
+    for (int i = 0; i < Mg.numNodes; i++) {
+        // 顶点值
+        (*G)->adjList[i].data = Mg.vexs[i];
+        // 顶点边表初始化
+        (*G)->adjList[i].firstEdg = NULL;
+    }
+    
+    // 创建边表
+    EdgeNode * node;
+    for (int i = 0; i < Mg.numNodes; i++) {
+        for (int j = 0; j < Mg.numNodes; j++) {
+            // 如果这两个顶点有关联关系
+            if (Mg.arc[i][j] == 1) {
+                node = (EdgeNode *)malloc(sizeof(EdgeNode));
+                // 头插法
+                node->next = (*G)->adjList[i].firstEdg;
+                node->adj_vex_index = j;
+                (*G)->adjList[i].firstEdg = node;
+                (*G)->adjList[j].in += 1;
+            }
+        }
+    }
+}
+
+void dfs(GraphLink G, int i) {
+    visited[i] = TRUE;
+    printf("%c", G->adjList[i].data);
+    
+    EdgeNode * p;
+    p = G->adjList[i].firstEdg;
+    
+    while (p) {
+        if (!visited[p->adj_vex_index])
+            dfs(G, p->adj_vex_index);
+        p = p->next;
+    }
+    
+//    for (int j = 0; j < G->node_num; j++) {
+//        if (G->adjList[i].firstEdg->adj_vex_index == j && !visited[j]) {
+//            dfs(G, j);
+//        }
+//    }
+}
+
+void DFSLinkGraph(GraphLink G) {
+    // 初始化标记数组
+    for (int i = 0; i < G->node_num; i++) {
+        visited[i] = FALSE;
+    }
+    
+    // 选择一个顶点开始遍历
+    for (int i = 0 ; i < G->node_num; i++) {
+        if (!visited[i])
+            dfs(G, i);
     }
 }

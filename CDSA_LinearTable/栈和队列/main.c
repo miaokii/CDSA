@@ -10,6 +10,7 @@
 #include "stdlib.h"
 #include "seqStack.h"
 #include "linkStack.h"
+#include "seqQueue.h"
 
 
 void test_seqStack() {
@@ -86,10 +87,51 @@ void test_linkStack() {
     LinkStackPrint(stack2);
 }
 
+void test_seqQueue() {
+    SeqQueue Q;
+    InitQueue(&Q);
+    printf("打印队列：");
+    PrintSeqQueue(Q);
+    
+    printf("入队：");
+    EnterQueue(&Q, 8);
+    PrintSeqQueue(Q);
+    
+    printf("入队：");
+    EnterQueue(&Q, 5);
+    PrintSeqQueue(Q);
+    
+    printf("入队：");
+    EnterQueue(&Q, 10);
+    PrintSeqQueue(Q);
+    
+    printf("入队：");
+    EnterQueue(&Q, 32);
+    PrintSeqQueue(Q);
+    
+    ElemType e;
+    DeleteQueue(&Q, &e);
+    printf("出队：%d\n", e);
+    printf("打印队列：");
+    PrintSeqQueue(Q);
+    
+    DeleteQueue(&Q, &e);
+    printf("出队：%d\n", e);
+    printf("打印队列：");
+    PrintSeqQueue(Q);
+    
+    DeleteQueue(&Q, &e);
+    printf("出队：%d\n", e);
+    printf("打印队列：");
+    PrintSeqQueue(Q);
+}
+
 int main(int argc, const char * argv[]) {
     
-    test_seqStack();
-    test_linkStack();
+//    test_seqStack();
+//    test_linkStack();
+    
+    test_seqQueue();
     
     printf("\n");
     return 0;

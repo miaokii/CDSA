@@ -10,17 +10,15 @@
 #define LinkGroup_h
 
 #include <stdio.h>
+#include "publicDefine.h"
 
 /* 邻接表存储 */
 
 typedef int BOOL;
-typedef char ElemType;
 
 /* 邻接表的链式存 */
 
 #define M 100
-#define FALSE -1
-#define TRUE 1
 
 /* 邻接表节点 */
 typedef struct Node{
@@ -28,7 +26,7 @@ typedef struct Node{
     int adj_vex_index;
     /// 权重值
     ElemType data;
-    /// 边指针
+    /// 指向下一个邻接点
     struct Node * next;
 } EdgeNode;
 
@@ -38,6 +36,8 @@ typedef struct vNode {
     ElemType data;
     /// 顶点的下一个是谁
     EdgeNode * firstEdg;
+    /// 顶点的度
+    int in;
 }VertexNode, Adjlist[M];
 
 /* 总图的一些信息 */

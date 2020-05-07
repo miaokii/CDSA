@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		B80721FB244F4990007A9FE0 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = B80721FA244F4990007A9FE0 /* main.c */; };
 		B8416906244DCDCD00162FE0 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = B8416905244DCDCD00162FE0 /* main.c */; };
+		B8516DB624646F8D0084582D /* BFS.c in Sources */ = {isa = PBXBuildFile; fileRef = B8516DB524646F8D0084582D /* BFS.c */; };
+		B8516DB9246470650084582D /* seqQueue.c in Sources */ = {isa = PBXBuildFile; fileRef = B8516DB8246470650084582D /* seqQueue.c */; };
 		B88262582461A1DC001EF2A8 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = B88262572461A1DC001EF2A8 /* main.c */; };
 		B882625E2461A37B001EF2A8 /* SeqGroup.c in Sources */ = {isa = PBXBuildFile; fileRef = B882625D2461A37B001EF2A8 /* SeqGroup.c */; };
 		B88262612461A399001EF2A8 /* LinkGroup.c in Sources */ = {isa = PBXBuildFile; fileRef = B88262602461A399001EF2A8 /* LinkGroup.c */; };
@@ -152,6 +154,10 @@
 		B80721FA244F4990007A9FE0 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		B8416903244DCDCD00162FE0 /* 去除重复字母 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "去除重复字母"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8416905244DCDCD00162FE0 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		B8516DB424646F8D0084582D /* BFS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BFS.h; sourceTree = "<group>"; };
+		B8516DB524646F8D0084582D /* BFS.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = BFS.c; sourceTree = "<group>"; };
+		B8516DB7246470650084582D /* seqQueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = seqQueue.h; sourceTree = "<group>"; };
+		B8516DB8246470650084582D /* seqQueue.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = seqQueue.c; sourceTree = "<group>"; };
 		B88262552461A1DC001EF2A8 /* 图 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "图"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B88262572461A1DC001EF2A8 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		B882625C2461A37B001EF2A8 /* SeqGroup.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SeqGroup.h; sourceTree = "<group>"; };
@@ -294,6 +300,8 @@
 				E2F18F27245AD2490046F448 /* seqStack.c */,
 				E2F18F20245AD1460046F448 /* linkStack.h */,
 				E2F18F21245AD1460046F448 /* linkStack.c */,
+				B8516DB7246470650084582D /* seqQueue.h */,
+				B8516DB8246470650084582D /* seqQueue.c */,
 			);
 			path = "栈和队列";
 			sourceTree = "<group>";
@@ -316,6 +324,8 @@
 				B88262602461A399001EF2A8 /* LinkGroup.c */,
 				B88262632461BDFA001EF2A8 /* DFS.h */,
 				B88262642461BDFA001EF2A8 /* DFS.c */,
+				B8516DB424646F8D0084582D /* BFS.h */,
+				B8516DB524646F8D0084582D /* BFS.c */,
 			);
 			path = "图";
 			sourceTree = "<group>";
@@ -756,6 +766,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2F18F22245AD1460046F448 /* linkStack.c in Sources */,
+				B8516DB9246470650084582D /* seqQueue.c in Sources */,
 				B80721FB244F4990007A9FE0 /* main.c in Sources */,
 				E2F18F28245AD2490046F448 /* seqStack.c in Sources */,
 			);
@@ -775,6 +786,7 @@
 			files = (
 				B88262612461A399001EF2A8 /* LinkGroup.c in Sources */,
 				B88262582461A1DC001EF2A8 /* main.c in Sources */,
+				B8516DB624646F8D0084582D /* BFS.c in Sources */,
 				B882625E2461A37B001EF2A8 /* SeqGroup.c in Sources */,
 				B88262652461BDFA001EF2A8 /* DFS.c in Sources */,
 			);

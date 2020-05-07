@@ -19,7 +19,7 @@
 #define FALSE 0
 
 /// 顺序表相关的使用
-#define MAXSIZE 20
+#define MAXSIZE 100
 
 typedef int Status;
 
