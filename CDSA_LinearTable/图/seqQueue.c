@@ -16,7 +16,7 @@ Status InitQueue(SeqQueue *Q){
 }
 
 /* 若队列Q为空队列,则返回TRUE,否则返回FALSE */
-Status QueueEmpty(SeqQueue Q){
+Status QueueEmpty(SeqQueue Q) {
     if(Q.front==Q.rear) /* 队列空的标志 */
         return TRUE;
     else
@@ -24,7 +24,7 @@ Status QueueEmpty(SeqQueue Q){
 }
 
 /* 若队列未满，则插入元素e为Q新的队尾元素 */
-Status EnterQueue(SeqQueue *Q,int e){
+Status EnterQueue(SeqQueue *Q,int e) {
     if ((Q->rear+1)%MAXSIZE == Q->front)    /* 队列满的判断 */
     return ERROR;
     Q->data[Q->rear]=e;            /* 将元素e赋值给队尾 */
@@ -34,7 +34,7 @@ Status EnterQueue(SeqQueue *Q,int e){
 }
 
 /* 若队列不空，则删除Q中队头元素，用e返回其值 */
-Status DeleteQueue(SeqQueue *Q,int *e){
+Status DeleteQueue(SeqQueue *Q,int *e) {
     if (Q->front == Q->rear)            /* 队列空的判断 */
         return ERROR;
     *e=Q->data[Q->front];                /* 将队头元素赋值给e */

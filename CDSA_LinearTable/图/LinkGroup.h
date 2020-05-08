@@ -21,13 +21,13 @@ typedef int BOOL;
 #define M 100
 
 /* 邻接表节点 */
-typedef struct Node{
+typedef struct rNode{
     /// 弧头的下标，被值向的下标
     int adj_vex_index;
     /// 权重值
     ElemType data;
     /// 指向下一个邻接点
-    struct Node * next;
+    struct rNode * next;
 } EdgeNode;
 
 /* 顶点节点表 */

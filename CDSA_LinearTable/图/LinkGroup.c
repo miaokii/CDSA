@@ -69,23 +69,3 @@ void putGraph(GraphLink G) {
         printf("\n");
     }
 }
-
-
-///* DFS遍历 */
-//// 标记访问数组
-//BOOL visited[MAXVEX];
-//
-//
-//void DFS(MGraph G, int i) {
-//
-//}
-//
-//void DFSTravese(MGraph G) {
-//    // 1、初始化
-//    for (int i = 0; i < G.numNodes; i++) {
-//        visited[i] = FALSE;
-//    }
-//
-//    // 2、某个顶点
-//
-//}

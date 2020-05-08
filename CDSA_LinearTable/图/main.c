@@ -12,6 +12,7 @@
 #include "LinkGroup.h"
 #include "DFS.h"
 #include "BFS.h"
+#include "seqQueue.h"
 
 /**
  图：由顶点的有穷非空集合和顶点的集合组成
@@ -59,11 +60,18 @@ void bfs_seq_group() {
     BFS_Seq_Graph(G);
 }
 
+void bfs_link_group() {
+    GraphLink G;
+    makeLinkGraph(&G);
+    BFS_Link_Graph(G);
+}
+
 int main(int argc, const char * argv[]) {
-//    seqGroupTest();
-//    linkGroupTest();
-//    dfs_seq_group();
-//    dfs_link_group();
-//    bfs_seq_group();
+    seqGroupTest();
+    linkGroupTest();
+    dfs_seq_group();
+    dfs_link_group();
+    bfs_seq_group();
+    bfs_link_group();
     return 0;
 }
