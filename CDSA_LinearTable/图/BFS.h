@@ -13,6 +13,6 @@
 #include "DFS.h"
 
 void BFS_Seq_Graph(MGraph G);
-void BFS_Link_Graph(GraphLink G);
+void BFS_Link_Graph(LinkGraph G);
 
 #endif /* BFS_h */

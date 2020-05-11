@@ -48,7 +48,7 @@ void BFS_Seq_Graph(MGraph G) {
 }
 
 
-void BFS_Link_Graph(GraphLink G) {
+void BFS_Link_Graph(LinkGraph G) {
     EdgeNode * p;
     
     SeqQueue Q;
@@ -66,12 +66,12 @@ void BFS_Link_Graph(GraphLink G) {
             EnterQueue(&Q, i);
             while (!QueueEmpty(Q)) {
                 DeleteQueue(&Q, &i);
-                p = G->adjList[i].firstEdg;
+                p = G->adjList[i].firstEdge;
                 while (p) {
-                    if (!bfs_visited[p->adj_vex_index]) {
-                        bfs_visited[p->adj_vex_index] = TRUE;
-                        printf("%c ", G->adjList[p->adj_vex_index].data);
-                        EnterQueue(&Q, p->adj_vex_index);
+                    if (!bfs_visited[p->adjvex]) {
+                        bfs_visited[p->adjvex] = TRUE;
+                        printf("%c ", G->adjList[p->adjvex].data);
+                        EnterQueue(&Q, p->adjvex);
                     }
                     p = p->next;
                 }

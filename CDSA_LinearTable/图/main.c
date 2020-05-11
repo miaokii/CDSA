@@ -13,6 +13,7 @@
 #include "DFS.h"
 #include "BFS.h"
 #include "seqQueue.h"
+#include "AOV.h"
 
 /**
  图：由顶点的有穷非空集合和顶点的集合组成
@@ -32,7 +33,7 @@ void seqGroupTest() {
 }
 
 void linkGroupTest() {
-    GraphLink G;
+    LinkGraph G;
     CreateGraph(&G);
     putGraph(G);
 }
@@ -45,7 +46,7 @@ void dfs_seq_group() {
 }
 
 void dfs_link_group() {
-    GraphLink G;
+    LinkGraph G;
     makeLinkGraph(&G);
     putGraph(G);
     
@@ -61,17 +62,27 @@ void bfs_seq_group() {
 }
 
 void bfs_link_group() {
-    GraphLink G;
+    LinkGraph G;
     makeLinkGraph(&G);
     BFS_Link_Graph(G);
 }
 
+void aov_test() {
+    LinkGraph G;
+//    makeLinkGraph(&G);
+    aov_make_link_graph(&G);
+//    putGraph(G);
+    aov_top_logical_sort(G);
+}
+
 int main(int argc, const char * argv[]) {
-    seqGroupTest();
-    linkGroupTest();
-    dfs_seq_group();
-    dfs_link_group();
-    bfs_seq_group();
-    bfs_link_group();
+//    seqGroupTest();
+//    linkGroupTest();
+//    dfs_seq_group();
+//    dfs_link_group();
+//    bfs_seq_group();
+//    bfs_link_group();
+    
+    aov_test();
     return 0;
 }

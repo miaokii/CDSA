@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		B80721FB244F4990007A9FE0 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = B80721FA244F4990007A9FE0 /* main.c */; };
+		B83260FC24697D5E00E5793C /* AOV.c in Sources */ = {isa = PBXBuildFile; fileRef = B83260FB24697D5E00E5793C /* AOV.c */; };
+		B83260FF2469878800E5793C /* AOE.c in Sources */ = {isa = PBXBuildFile; fileRef = B83260FE2469878800E5793C /* AOE.c */; };
 		B8416906244DCDCD00162FE0 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = B8416905244DCDCD00162FE0 /* main.c */; };
 		B8516DB624646F8D0084582D /* BFS.c in Sources */ = {isa = PBXBuildFile; fileRef = B8516DB524646F8D0084582D /* BFS.c */; };
 		B8516DBA2465A9540084582D /* seqQueue.c in Sources */ = {isa = PBXBuildFile; fileRef = B8516DB8246470650084582D /* seqQueue.c */; };
@@ -152,6 +154,10 @@
 /* Begin PBXFileReference section */
 		B80721F8244F4990007A9FE0 /* 栈和队列 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "栈和队列"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B80721FA244F4990007A9FE0 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		B83260FA24697D5E00E5793C /* AOV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AOV.h; sourceTree = "<group>"; };
+		B83260FB24697D5E00E5793C /* AOV.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = AOV.c; sourceTree = "<group>"; };
+		B83260FD2469878800E5793C /* AOE.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AOE.h; sourceTree = "<group>"; };
+		B83260FE2469878800E5793C /* AOE.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = AOE.c; sourceTree = "<group>"; };
 		B8416903244DCDCD00162FE0 /* 去除重复字母 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "去除重复字母"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8416905244DCDCD00162FE0 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		B8516DB424646F8D0084582D /* BFS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BFS.h; sourceTree = "<group>"; };
@@ -326,6 +332,10 @@
 				B88262642461BDFA001EF2A8 /* DFS.c */,
 				B8516DB424646F8D0084582D /* BFS.h */,
 				B8516DB524646F8D0084582D /* BFS.c */,
+				B83260FA24697D5E00E5793C /* AOV.h */,
+				B83260FB24697D5E00E5793C /* AOV.c */,
+				B83260FD2469878800E5793C /* AOE.h */,
+				B83260FE2469878800E5793C /* AOE.c */,
 			);
 			path = "图";
 			sourceTree = "<group>";
@@ -786,6 +796,8 @@
 				B88262612461A399001EF2A8 /* LinkGroup.c in Sources */,
 				B8516DBA2465A9540084582D /* seqQueue.c in Sources */,
 				B88262582461A1DC001EF2A8 /* main.c in Sources */,
+				B83260FF2469878800E5793C /* AOE.c in Sources */,
+				B83260FC24697D5E00E5793C /* AOV.c in Sources */,
 				B8516DB624646F8D0084582D /* BFS.c in Sources */,
 				B882625E2461A37B001EF2A8 /* SeqGroup.c in Sources */,
 				B88262652461BDFA001EF2A8 /* DFS.c in Sources */,

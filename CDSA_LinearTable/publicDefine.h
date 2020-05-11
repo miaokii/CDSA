@@ -22,7 +22,7 @@
 #define MAXSIZE 100
 
 typedef int Status;
-
-typedef int ElemType;
+typedef int BOOL;
+typedef char ElemType;
 
 #endif /* publicDefine_h */

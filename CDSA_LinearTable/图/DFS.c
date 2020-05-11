@@ -103,11 +103,11 @@ void DFSSeqTravese(MGraph G) {
 }
 
 
-void makeLinkGraph(GraphLink *G) {
+void makeLinkGraph(LinkGraph *G) {
     MGraph Mg;
     makeAMGraph(&Mg);
     
-    *G = (GraphLink)malloc(sizeof(GraphLink));
+    *G = (LinkGraph)malloc(sizeof(LinkGraph));
     (*G)->arc_num = Mg.numEdges;
     (*G)->node_num = Mg.numNodes;
     
@@ -116,7 +116,7 @@ void makeLinkGraph(GraphLink *G) {
         // 顶点值
         (*G)->adjList[i].data = Mg.vexs[i];
         // 顶点边表初始化
-        (*G)->adjList[i].firstEdg = NULL;
+        (*G)->adjList[i].firstEdge = NULL;
     }
     
     // 创建边表
@@ -127,36 +127,36 @@ void makeLinkGraph(GraphLink *G) {
             if (Mg.arc[i][j] == 1) {
                 node = (EdgeNode *)malloc(sizeof(EdgeNode));
                 // 头插法
-                node->next = (*G)->adjList[i].firstEdg;
-                node->adj_vex_index = j;
-                (*G)->adjList[i].firstEdg = node;
+                node->next = (*G)->adjList[i].firstEdge;
+                node->adjvex = j;
+                (*G)->adjList[i].firstEdge = node;
                 (*G)->adjList[j].in += 1;
             }
         }
     }
 }
 
-void dfs(GraphLink G, int i) {
+void dfs(LinkGraph G, int i) {
     visited[i] = TRUE;
     printf("%c", G->adjList[i].data);
     
     EdgeNode * p;
-    p = G->adjList[i].firstEdg;
+    p = G->adjList[i].firstEdge;
     
     while (p) {
-        if (!visited[p->adj_vex_index])
-            dfs(G, p->adj_vex_index);
+        if (!visited[p->adjvex])
+            dfs(G, p->adjvex);
         p = p->next;
     }
     
 //    for (int j = 0; j < G->node_num; j++) {
-//        if (G->adjList[i].firstEdg->adj_vex_index == j && !visited[j]) {
+//        if (G->adjList[i].firstEdg->adjvex == j && !visited[j]) {
 //            dfs(G, j);
 //        }
 //    }
 }
 
-void DFSLinkGraph(GraphLink G) {
+void DFSLinkGraph(LinkGraph G) {
     // 初始化标记数组
     for (int i = 0; i < G->node_num; i++) {
         visited[i] = FALSE;

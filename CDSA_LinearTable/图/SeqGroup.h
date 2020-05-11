@@ -10,21 +10,21 @@
 #define SeqGroup_h
 
 #include <stdio.h>
-
+#include "publicDefine.h"
 
 /* 最大顶点数 */
 #define MAXVEX 100
 /* ∞ */
 #define INFINITY 0
 
-typedef int Status;
-typedef char VertexType;
+//typedef int Status;
+//typedef char VertexType;
 typedef int EdgeType;
 
 /* 邻接矩阵存储 */
 typedef struct {
     /* 顶点集合 */
-    VertexType vexs[MAXVEX];
+    ElemType vexs[MAXVEX];
     /* 邻接矩阵 表边 */
     EdgeType arc[MAXVEX][MAXVEX];
     /* 当前图中的顶点数和边数 */

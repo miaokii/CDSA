@@ -17,10 +17,14 @@
 
 /* 右手原则 */
 
+/// 创建一个邻接矩阵
 void makeAMGraph(MGraph *G);
+/// 深度优先遍历邻接举证
 void DFSSeqTravese(MGraph G);
 
-void makeLinkGraph(GraphLink *G);
-void DFSLinkGraph(GraphLink G);
+/// 创建一个邻接表
+void makeLinkGraph(LinkGraph *G);
+/// 深度优先遍历邻接表
+void DFSLinkGraph(LinkGraph G);
 
 #endif /* DFS_h */
