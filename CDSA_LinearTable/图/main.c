@@ -14,6 +14,7 @@
 #include "BFS.h"
 #include "seqQueue.h"
 #include "AOV.h"
+#include "AOE.h"
 
 /**
  图：由顶点的有穷非空集合和顶点的集合组成
@@ -75,6 +76,14 @@ void aov_test() {
     aov_top_logical_sort(G);
 }
 
+void aoe_test() {
+    LinkGraph G;
+    aoe_make_link_graph(&G);
+//    putGraph(G);
+    
+    aoe_critical_path(G);
+}
+
 int main(int argc, const char * argv[]) {
 //    seqGroupTest();
 //    linkGroupTest();
@@ -83,6 +92,7 @@ int main(int argc, const char * argv[]) {
 //    bfs_seq_group();
 //    bfs_link_group();
     
-    aov_test();
+//    aov_test();
+    aoe_test();
     return 0;
 }

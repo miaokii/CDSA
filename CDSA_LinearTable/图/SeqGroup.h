@@ -15,7 +15,7 @@
 /* 最大顶点数 */
 #define MAXVEX 100
 /* ∞ */
-#define INFINITY 0
+#define INFINITY 65535
 
 //typedef int Status;
 //typedef char VertexType;
