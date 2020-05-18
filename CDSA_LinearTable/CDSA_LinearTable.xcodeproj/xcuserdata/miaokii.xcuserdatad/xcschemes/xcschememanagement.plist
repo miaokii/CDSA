@@ -7,7 +7,7 @@
 		<key>BF.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>9</integer>
+			<integer>7</integer>
 		</dict>
 		<key>Bothway Linked List.xcscheme_^#shared#^_</key>
 		<dict>
@@ -22,7 +22,7 @@
 		<key>KMP算法.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>12</integer>
+			<integer>13</integer>
 		</dict>
 		<key>Linked list.xcscheme_^#shared#^_</key>
 		<dict>
@@ -34,6 +34,11 @@
 			<key>orderHint</key>
 			<integer>4</integer>
 		</dict>
+		<key>selection_sort.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>14</integer>
+		</dict>
 		<key>习题.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
@@ -42,52 +47,57 @@
 		<key>二叉树.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>11</integer>
+			<integer>1</integer>
 		</dict>
 		<key>单项循环链表.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>8</integer>
+			<integer>9</integer>
 		</dict>
 		<key>去除重复字母.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>2</integer>
+			<integer>3</integer>
 		</dict>
 		<key>双向链表.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>7</integer>
+			<integer>4</integer>
 		</dict>
 		<key>图.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>5</integer>
+			<integer>10</integer>
 		</dict>
 		<key>字符串匹配RK算法.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>4</integer>
+			<integer>5</integer>
+		</dict>
+		<key>排序.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>12</integer>
 		</dict>
 		<key>栈和队列.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>10</integer>
+			<integer>8</integer>
 		</dict>
 		<key>栈队列习题.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>6</integer>
 		</dict>
 		<key>线性表习题.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>6</integer>
+			<integer>2</integer>
 		</dict>
 		<key>链表.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>3</integer>
+			<integer>11</integer>
 		</dict>
 	</dict>
 </dict>

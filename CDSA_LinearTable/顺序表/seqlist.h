@@ -6,8 +6,8 @@
 //  Copyright © 2020 ly. All rights reserved.
 //
 
-#ifndef ____h
-#define ____h
+#ifndef Seqlist_h
+#define Seqlist_h
 
 #include <stdio.h>
 #include "publicDefine.h"
@@ -77,6 +77,12 @@ Status ListClear_Sq(Seqlist * L);
  */
 void ListPrint_Sq(Seqlist L);
 
+/// 交换顺序表中i，j两个位置的元素
+/// @param L 顺序表
+/// @param i i
+/// @param j j
+void SwapList_Sq(Seqlist *L, int i, int j);
+
 /*
     合并两个有序顺序表
     初始条件：La，Lb有序
@@ -85,4 +91,4 @@ void ListPrint_Sq(Seqlist L);
 Status MergeList_Sq(Seqlist La, Seqlist Lb, Seqlist * Lc);
 
 
-#endif /* ____h */
+#endif /* Seqlist_h */

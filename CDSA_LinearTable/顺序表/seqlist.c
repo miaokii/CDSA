@@ -6,7 +6,7 @@
 //  Copyright © 2020 ly. All rights reserved.
 //
 
-#include "顺序表.h"
+#include "seqlist.h"
 
 /**
     初始化顺序表 Seqlist
@@ -150,6 +150,22 @@ void ListPrint_Sq(Seqlist L) {
         printf("%d ", L.elem[i]);
     }
     printf("\n");
+}
+
+void SwapList_Sq(Seqlist *L, int i, int j) {
+    if (L && i < L->length && j < L->length) {
+//        ElemType temp = L->elem[i];
+//        L->elem[i] = L->elem[j];
+//        L->elem[j] = temp;
+        
+        L->elem[i] += L->elem[j];
+        L->elem[j] = L->elem[i] - L->elem[j];
+        L->elem[i] = L->elem[i] - L->elem[j];
+
+//        L->elem[i] = L->elem[i] ^ L->elem[j];
+//        L->elem[j] = L->elem[i] ^ L->elem[j];
+//        L->elem[i] = L->elem[i] ^ L->elem[j];
+    }
 }
 
 /*

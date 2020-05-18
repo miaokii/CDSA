@@ -44,7 +44,7 @@ typedef struct Graph {
     /// 节点个数
     int node_num;
     /// 是不是有向图
-    BOOL is_directed;
+    Bool is_directed;
 }Graph, *LinkGraph;
 
 /// 创建一个邻接表
