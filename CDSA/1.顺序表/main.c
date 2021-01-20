@@ -1,9 +1,9 @@
 //
 //  main.c
-//  CDSA_LinearTable
+//  1.顺序表
 //
-//  Created by miaokii on 2020/4/10.
-//  Copyright © 2020 ly. All rights reserved.
+//  Created by miaokii on 2021/1/20.
+//  Copyright © 2021 ly. All rights reserved.
 //
 
 #include <stdio.h>

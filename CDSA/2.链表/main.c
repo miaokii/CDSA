@@ -10,11 +10,10 @@
 #include "stdlib.h"
 #include "time.h"
 #include "linkList.h"
-#include "顺序表.h"
+#include "seqlist.h"
 
 typedef int Status;
 typedef int ElemType;
-
 
 int main(int argc, const char * argv[]) {
     LinkList L;
