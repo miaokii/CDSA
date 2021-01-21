@@ -9,16 +9,15 @@
 #ifndef Seqlist_h
 #define Seqlist_h
 
-#include <stdio.h>
 #include "publicDefine.h"
 
 /// 顺序表结构
 typedef struct {
-    // 存储空间的基地址
+    // 存储空间的基地址，其实是一个数组结构，长度为listsize，数组中的元素类型为ElemType类型
     ElemType * elem;
-    // 当前长度
+    // 当前长度，即存储了值的elem数组长度
     int length;
-    // 总的存储容量
+    // 总的存储容量，总的长度，顺序表申请的时候长度需要确定，当到达最大长度时，在重新申请内存
     int listSize;
 } Seqlist;
 

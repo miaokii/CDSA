@@ -12,45 +12,44 @@
 #include "linkList.h"
 #include "seqlist.h"
 
-typedef int Status;
-typedef int ElemType;
-
 int main(int argc, const char * argv[]) {
+    
     LinkList L;
     Status iStatus;
-    iStatus = InitList(&L);
+    
+    iStatus = InitLinkList(&L);
     printf("L 是否初始化成功?（0：失败,1：成功）： %d\n",iStatus);
     
     for (int i = 1; i <= 8; i++) {
-        ListInsert(&L, i, i);
+        LinkListInsert(&L, i, i);
     }
     printf("L 插入后：");
-    ListPrint(L);
+    LinkListPrint(L);
     
     int i = 8;
     ElemType e;
-    GetElem(L, i, &e);
+    LinkListGetElem(L, i, &e);
     printf("L 第%d个节点值：%d\n", i, e);
     
-    int j = 10;
+    i = 2;
     ElemType e1;
-    ListDelete(&L, j, &e1);
-    printf("L 删除第%d个节点，该节点值为：%d，删除后L：", j, e1);
-    ListPrint(L);
+    LinkListDelete(&L, i, &e1);
+    printf("L 删除第%d个节点，该节点值为：%d，删除后L：", i, e1);
+    LinkListPrint(L);
     
-    ListClear(&L);
+    LinkListClear(&L);
     printf("L 删除所有节点，删除后L：");
-    ListPrint(L);
+    LinkListPrint(L);
     
-    ListCreateHead(&L, 10);
+    LinkListCreateHead(&L, 10);
     printf("前插法创建L随机链表：");
-    ListPrint(L);
+    LinkListPrint(L);
     
-    ListClear(&L);
+    LinkListClear(&L);
     
-    ListCreateTail(&L, 10);
+    LinkListCreateTail(&L, 10);
     printf("尾插法创建L随机链表：");
-    ListPrint(L);
+    LinkListPrint(L);
     
     return 0;
 }

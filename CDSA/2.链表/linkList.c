@@ -8,11 +8,14 @@
 
 #include "linkList.h"
 #include "stdlib.h"
+#include <stdio.h>
+
 /**
     创建单链表
  */
-Status InitList(LinkList *L) {
-    // 头节点，L指向头节点
+Status InitLinkList(LinkList *L) {
+    // 创建头节点，L指向头节点，头节点不存储值
+    // LinkList本身就是 struct Node * 类型
     *L = (LinkList)malloc(sizeof(Node));
     // 存储空间分配失败
     if (*L==NULL) return ERROR;
@@ -24,7 +27,7 @@ Status InitList(LinkList *L) {
 /**
     打印链表
  */
-void ListPrint(LinkList L) {
+void LinkListPrint(LinkList L) {
     // 第一个节点是首元节点
     LinkList p = L->next;
     while (p) {
@@ -39,7 +42,9 @@ void ListPrint(LinkList L) {
     初始条件：L已经存在，且 1 < i
     操作结果：L第i个位置插入新节点e
  */
-Status ListInsert(LinkList *L, int i, ElemType e) {
+Status LinkListInsert(LinkList *L, int i, ElemType e) {
+    
+    // L时形参，传入的是链表的首地址，所以先要取值
     LinkList p = *L;
     // 从头节点开始找
     int j = 1;
@@ -66,7 +71,7 @@ Status ListInsert(LinkList *L, int i, ElemType e) {
     初始条件：L存在，且1<=i<=length
     操作结果：通过e返回第i个元素
  */
-Status GetElem(LinkList L, int i, ElemType *e) {
+Status LinkListGetElem(LinkList L, int i, ElemType *e) {
     // L的第一个节点
     LinkList p = L->next;
     int j = 1;
@@ -86,19 +91,19 @@ Status GetElem(LinkList L, int i, ElemType *e) {
     初始条件：L存在，且1<=i<=length
     操作结果：删除L第i个元素，并返回e的值
  */
-Status ListDelete(LinkList *L, int i, ElemType *e) {
+Status LinkListDelete(LinkList *L, int i, ElemType *e) {
     // 指向第一个元素
     LinkList p = *L;
     LinkList temp;
     int j = 1;
     
     // 查找第i-1个节点
-    while (p->next && j < i-1) {
+    while (p->next && j < i) {
         p = p->next;
         j++;
     }
     // 如果i>n或者i<1，删除位置不合理
-    if (!(p->next) || j > i-1) return ERROR;
+    if (!(p->next) || j > i) return ERROR;
     // temp指向被删除的节点
     temp = p->next;
     // temp的后继节点给p的后继
@@ -113,7 +118,7 @@ Status ListDelete(LinkList *L, int i, ElemType *e) {
 /**
     清空链表
  */
-Status ListClear(LinkList *L) {
+Status LinkListClear(LinkList *L) {
     LinkList p = (*L)->next;
     LinkList q;
     while (p) {
@@ -130,7 +135,7 @@ Status ListClear(LinkList *L) {
     单链表前插法
     随机产生n个元素值，建立带有头结点的单链表L
  */
-void ListCreateHead(LinkList *L, int n) {
+void LinkListCreateHead(LinkList *L, int n) {
     // 带有头节点的
     *L = (LinkList)malloc(sizeof(Node));
     (*L)->next = NULL;
@@ -152,18 +157,34 @@ void ListCreateHead(LinkList *L, int n) {
 /**
     单链表后插法
  */
-void ListCreateTail(LinkList *L, int n) {
+void LinkListCreateTail(LinkList *L, int n) {
+    
+    // 初始化
     *L = (LinkList)malloc(sizeof(Node));
     (*L)->next = NULL;
     
-    LinkList p, t = *L;
-    int i = 1;
-    while (i <= n) {
-        i++;
-        p = (LinkList) malloc(sizeof(Node));
-        p->data = rand()%10;
-        p->next = NULL;
-        t->next = p;
-        t = p;
+    LinkList next = *L;
+    int j = 1;
+    while (j <= n) {
+        LinkList new = (LinkList)malloc(sizeof(Node));
+        new->next = NULL;
+        new->data = random()%100;
+        next->next = new;
+        next=new;
+        j++;
     }
+    
+//    *L = (LinkList)malloc(sizeof(Node));
+//    (*L)->next = NULL;
+//    
+//    LinkList p, t = *L;
+//    int i = 1;
+//    while (i <= n) {
+//        i++;
+//        p = (LinkList) malloc(sizeof(Node));
+//        p->data = rand()%10;
+//        p->next = NULL;
+//        t->next = p;
+//        t = p;
+//    }
 }

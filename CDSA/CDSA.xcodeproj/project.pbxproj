@@ -27,13 +27,17 @@
 		B8E905642472E1DC006B598E /* SqList.c in Sources */ = {isa = PBXBuildFile; fileRef = B8E905632472E1DC006B598E /* SqList.c */; };
 		E24F6C9E25B82B66008B5C30 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = E24F6C7B25B82AC0008B5C30 /* main.c */; };
 		E24F6CE325B82C01008B5C30 /* seqlist.c in Sources */ = {isa = PBXBuildFile; fileRef = E24F6CE225B82C01008B5C30 /* seqlist.c */; };
+		E24F6D5C25B94A00008B5C30 /* publicDefine.c in Sources */ = {isa = PBXBuildFile; fileRef = E24F6D5B25B94A00008B5C30 /* publicDefine.c */; };
+		E24F6D6D25B94A4C008B5C30 /* publicDefine.c in Sources */ = {isa = PBXBuildFile; fileRef = E24F6D5B25B94A00008B5C30 /* publicDefine.c */; };
+		E24F6DC125B96228008B5C30 /* oneWayCycleLinkList.c in Sources */ = {isa = PBXBuildFile; fileRef = E24F6DC025B96228008B5C30 /* oneWayCycleLinkList.c */; };
 		E2DF8FED24407A4500E53DDD /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = E2DF8FEC24407A4500E53DDD /* main.c */; };
-		E2DF8FF8244430A200E53DDD /* 单向循环列表.c in Sources */ = {isa = PBXBuildFile; fileRef = E2DF8FF7244430A200E53DDD /* 单向循环列表.c */; };
-		E2DF900324445FE000E53DDD /* 双向列表.c in Sources */ = {isa = PBXBuildFile; fileRef = E2DF900224445FE000E53DDD /* 双向列表.c */; };
+		E2DF8FF8244430A200E53DDD /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = E2DF8FF7244430A200E53DDD /* main.c */; };
+		E2DF900324445FE000E53DDD /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = E2DF900224445FE000E53DDD /* main.c */; };
 		E2DF900E2445AE6900E53DDD /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = E2DF900D2445AE6900E53DDD /* main.c */; };
 		E2F18F22245AD1460046F448 /* linkStack.c in Sources */ = {isa = PBXBuildFile; fileRef = E2F18F21245AD1460046F448 /* linkStack.c */; };
 		E2F18F25245AD15A0046F448 /* linkList.c in Sources */ = {isa = PBXBuildFile; fileRef = E2F18F24245AD15A0046F448 /* linkList.c */; };
 		E2F18F28245AD2490046F448 /* seqStack.c in Sources */ = {isa = PBXBuildFile; fileRef = E2F18F27245AD2490046F448 /* seqStack.c */; };
+		E2F9649B25B96EC600DA9028 /* twoWayLinkList.c in Sources */ = {isa = PBXBuildFile; fileRef = E2F9649A25B96EC600DA9028 /* twoWayLinkList.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -119,15 +123,6 @@
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 		B8E905512472B4A1006B598E /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 1;
-		};
-		E21024FF2440078200F77F8F /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -225,18 +220,20 @@
 		B8E9055E2472B874006B598E /* shell_sort.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = shell_sort.c; sourceTree = "<group>"; };
 		B8E905622472E1DC006B598E /* SqList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SqList.h; sourceTree = "<group>"; };
 		B8E905632472E1DC006B598E /* SqList.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = SqList.c; sourceTree = "<group>"; };
-		E21025012440078200F77F8F /* 顺序表 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "顺序表"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E24F6C4725B82A8D008B5C30 /* 1.顺序表 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "1.顺序表"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E24F6C7B25B82AC0008B5C30 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		E24F6CE125B82C01008B5C30 /* seqlist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = seqlist.h; sourceTree = "<group>"; };
 		E24F6CE225B82C01008B5C30 /* seqlist.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = seqlist.c; sourceTree = "<group>"; };
+		E24F6D5B25B94A00008B5C30 /* publicDefine.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = publicDefine.c; sourceTree = "<group>"; };
+		E24F6DBF25B96228008B5C30 /* oneWayCycleLinkList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = oneWayCycleLinkList.h; sourceTree = "<group>"; };
+		E24F6DC025B96228008B5C30 /* oneWayCycleLinkList.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = oneWayCycleLinkList.c; sourceTree = "<group>"; };
 		E27851A8245A826300736D43 /* publicDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = publicDefine.h; sourceTree = "<group>"; };
-		E2DF8FEA24407A4500E53DDD /* 链表 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "链表"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2DF8FEA24407A4500E53DDD /* 2.链表 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "2.链表"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2DF8FEC24407A4500E53DDD /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
-		E2DF8FF5244430A200E53DDD /* 单项循环链表 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "单项循环链表"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E2DF8FF7244430A200E53DDD /* 单向循环列表.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "单向循环列表.c"; sourceTree = "<group>"; };
-		E2DF900024445FE000E53DDD /* 双向链表 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "双向链表"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E2DF900224445FE000E53DDD /* 双向列表.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "双向列表.c"; sourceTree = "<group>"; };
+		E2DF8FF5244430A200E53DDD /* 3.单项循环链表 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "3.单项循环链表"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2DF8FF7244430A200E53DDD /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		E2DF900024445FE000E53DDD /* 4.双向链表 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "4.双向链表"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2DF900224445FE000E53DDD /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		E2DF900B2445AE6900E53DDD /* 线性表习题 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "线性表习题"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2DF900D2445AE6900E53DDD /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		E2F18F20245AD1460046F448 /* linkStack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = linkStack.h; sourceTree = "<group>"; };
@@ -245,6 +242,8 @@
 		E2F18F24245AD15A0046F448 /* linkList.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = linkList.c; sourceTree = "<group>"; };
 		E2F18F26245AD2490046F448 /* seqStack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = seqStack.h; sourceTree = "<group>"; };
 		E2F18F27245AD2490046F448 /* seqStack.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = seqStack.c; sourceTree = "<group>"; };
+		E2F9649925B96EC600DA9028 /* twoWayLinkList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = twoWayLinkList.h; sourceTree = "<group>"; };
+		E2F9649A25B96EC600DA9028 /* twoWayLinkList.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = twoWayLinkList.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -312,13 +311,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		B8E905502472B4A1006B598E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E21024FE2440078200F77F8F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -465,6 +457,7 @@
 			isa = PBXGroup;
 			children = (
 				E27851A8245A826300736D43 /* publicDefine.h */,
+				E24F6D5B25B94A00008B5C30 /* publicDefine.c */,
 				E24F6C7A25B82AC0008B5C30 /* 1.顺序表 */,
 				E2DF8FEB24407A4500E53DDD /* 2.链表 */,
 				E2DF8FF6244430A200E53DDD /* 3.单向循环列表 */,
@@ -486,10 +479,9 @@
 		E21025022440078200F77F8F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E21025012440078200F77F8F /* 顺序表 */,
-				E2DF8FEA24407A4500E53DDD /* 链表 */,
-				E2DF8FF5244430A200E53DDD /* 单项循环链表 */,
-				E2DF900024445FE000E53DDD /* 双向链表 */,
+				E2DF8FEA24407A4500E53DDD /* 2.链表 */,
+				E2DF8FF5244430A200E53DDD /* 3.单项循环链表 */,
+				E2DF900024445FE000E53DDD /* 4.双向链表 */,
 				E2DF900B2445AE6900E53DDD /* 线性表习题 */,
 				B8416903244DCDCD00162FE0 /* 去除重复字母 */,
 				B8A5CCB5244DD70C009114EF /* BF */,
@@ -510,8 +502,8 @@
 			isa = PBXGroup;
 			children = (
 				E24F6C7B25B82AC0008B5C30 /* main.c */,
-				E24F6CE225B82C01008B5C30 /* seqlist.c */,
 				E24F6CE125B82C01008B5C30 /* seqlist.h */,
+				E24F6CE225B82C01008B5C30 /* seqlist.c */,
 			);
 			path = "1.顺序表";
 			sourceTree = "<group>";
@@ -529,7 +521,9 @@
 		E2DF8FF6244430A200E53DDD /* 3.单向循环列表 */ = {
 			isa = PBXGroup;
 			children = (
-				E2DF8FF7244430A200E53DDD /* 单向循环列表.c */,
+				E2DF8FF7244430A200E53DDD /* main.c */,
+				E24F6DBF25B96228008B5C30 /* oneWayCycleLinkList.h */,
+				E24F6DC025B96228008B5C30 /* oneWayCycleLinkList.c */,
 			);
 			path = "3.单向循环列表";
 			sourceTree = "<group>";
@@ -537,7 +531,9 @@
 		E2DF900124445FE000E53DDD /* 4.双向链表 */ = {
 			isa = PBXGroup;
 			children = (
-				E2DF900224445FE000E53DDD /* 双向列表.c */,
+				E2DF900224445FE000E53DDD /* main.c */,
+				E2F9649925B96EC600DA9028 /* twoWayLinkList.h */,
+				E2F9649A25B96EC600DA9028 /* twoWayLinkList.c */,
 			);
 			path = "4.双向链表";
 			sourceTree = "<group>";
@@ -723,23 +719,6 @@
 			productReference = B8E905532472B4A1006B598E /* selection_sort */;
 			productType = "com.apple.product-type.tool";
 		};
-		E21025002440078200F77F8F /* 顺序表 */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E21025082440078200F77F8F /* Build configuration list for PBXNativeTarget "顺序表" */;
-			buildPhases = (
-				E21024FD2440078200F77F8F /* Sources */,
-				E21024FE2440078200F77F8F /* Frameworks */,
-				E21024FF2440078200F77F8F /* CopyFiles */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "顺序表";
-			productName = CDSA_LinearTable;
-			productReference = E21025012440078200F77F8F /* 顺序表 */;
-			productType = "com.apple.product-type.tool";
-		};
 		E24F6C4625B82A8D008B5C30 /* 1.顺序表 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E24F6C4B25B82A8D008B5C30 /* Build configuration list for PBXNativeTarget "1.顺序表" */;
@@ -757,9 +736,9 @@
 			productReference = E24F6C4725B82A8D008B5C30 /* 1.顺序表 */;
 			productType = "com.apple.product-type.tool";
 		};
-		E2DF8FE924407A4500E53DDD /* 链表 */ = {
+		E2DF8FE924407A4500E53DDD /* 2.链表 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E2DF8FEE24407A4500E53DDD /* Build configuration list for PBXNativeTarget "链表" */;
+			buildConfigurationList = E2DF8FEE24407A4500E53DDD /* Build configuration list for PBXNativeTarget "2.链表" */;
 			buildPhases = (
 				E2DF8FE624407A4500E53DDD /* Sources */,
 				E2DF8FE724407A4500E53DDD /* Frameworks */,
@@ -769,14 +748,14 @@
 			);
 			dependencies = (
 			);
-			name = "链表";
+			name = "2.链表";
 			productName = "Linked list";
-			productReference = E2DF8FEA24407A4500E53DDD /* 链表 */;
+			productReference = E2DF8FEA24407A4500E53DDD /* 2.链表 */;
 			productType = "com.apple.product-type.tool";
 		};
-		E2DF8FF4244430A200E53DDD /* 单项循环链表 */ = {
+		E2DF8FF4244430A200E53DDD /* 3.单项循环链表 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E2DF8FF9244430A200E53DDD /* Build configuration list for PBXNativeTarget "单项循环链表" */;
+			buildConfigurationList = E2DF8FF9244430A200E53DDD /* Build configuration list for PBXNativeTarget "3.单项循环链表" */;
 			buildPhases = (
 				E2DF8FF1244430A200E53DDD /* Sources */,
 				E2DF8FF2244430A200E53DDD /* Frameworks */,
@@ -786,14 +765,14 @@
 			);
 			dependencies = (
 			);
-			name = "单项循环链表";
+			name = "3.单项循环链表";
 			productName = "Single Cycle Linked List";
-			productReference = E2DF8FF5244430A200E53DDD /* 单项循环链表 */;
+			productReference = E2DF8FF5244430A200E53DDD /* 3.单项循环链表 */;
 			productType = "com.apple.product-type.tool";
 		};
-		E2DF8FFF24445FE000E53DDD /* 双向链表 */ = {
+		E2DF8FFF24445FE000E53DDD /* 4.双向链表 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E2DF900424445FE000E53DDD /* Build configuration list for PBXNativeTarget "双向链表" */;
+			buildConfigurationList = E2DF900424445FE000E53DDD /* Build configuration list for PBXNativeTarget "4.双向链表" */;
 			buildPhases = (
 				E2DF8FFC24445FE000E53DDD /* Sources */,
 				E2DF8FFD24445FE000E53DDD /* Frameworks */,
@@ -803,9 +782,9 @@
 			);
 			dependencies = (
 			);
-			name = "双向链表";
+			name = "4.双向链表";
 			productName = "Bothway Linked List";
-			productReference = E2DF900024445FE000E53DDD /* 双向链表 */;
+			productReference = E2DF900024445FE000E53DDD /* 4.双向链表 */;
 			productType = "com.apple.product-type.tool";
 		};
 		E2DF900A2445AE6900E53DDD /* 线性表习题 */ = {
@@ -832,7 +811,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1230;
-				LastUpgradeCheck = 1140;
+				LastUpgradeCheck = 1230;
 				ORGANIZATIONNAME = ly;
 				TargetAttributes = {
 					B80721F7244F4990007A9FE0 = {
@@ -865,9 +844,6 @@
 					B8E905522472B4A1006B598E = {
 						CreatedOnToolsVersion = 11.4.1;
 					};
-					E21025002440078200F77F8F = {
-						CreatedOnToolsVersion = 11.4;
-					};
 					E24F6C4625B82A8D008B5C30 = {
 						CreatedOnToolsVersion = 12.3;
 					};
@@ -899,10 +875,9 @@
 			projectRoot = "";
 			targets = (
 				E24F6C4625B82A8D008B5C30 /* 1.顺序表 */,
-				E21025002440078200F77F8F /* 顺序表 */,
-				E2DF8FE924407A4500E53DDD /* 链表 */,
-				E2DF8FF4244430A200E53DDD /* 单项循环链表 */,
-				E2DF8FFF24445FE000E53DDD /* 双向链表 */,
+				E2DF8FE924407A4500E53DDD /* 2.链表 */,
+				E2DF8FF4244430A200E53DDD /* 3.单项循环链表 */,
+				E2DF8FFF24445FE000E53DDD /* 4.双向链表 */,
 				E2DF900A2445AE6900E53DDD /* 线性表习题 */,
 				B8416902244DCDCD00162FE0 /* 去除重复字母 */,
 				B8A5CCB4244DD70C009114EF /* BF */,
@@ -1009,17 +984,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E21024FD2440078200F77F8F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		E24F6C4325B82A8D008B5C30 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E24F6D5C25B94A00008B5C30 /* publicDefine.c in Sources */,
 				E24F6C9E25B82B66008B5C30 /* main.c in Sources */,
 				E24F6CE325B82C01008B5C30 /* seqlist.c in Sources */,
 			);
@@ -1029,6 +998,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E24F6D6D25B94A4C008B5C30 /* publicDefine.c in Sources */,
 				E2F18F25245AD15A0046F448 /* linkList.c in Sources */,
 				E2DF8FED24407A4500E53DDD /* main.c in Sources */,
 			);
@@ -1038,7 +1008,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2DF8FF8244430A200E53DDD /* 单向循环列表.c in Sources */,
+				E2DF8FF8244430A200E53DDD /* main.c in Sources */,
+				E24F6DC125B96228008B5C30 /* oneWayCycleLinkList.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1046,7 +1017,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2DF900324445FE000E53DDD /* 双向列表.c in Sources */,
+				E2DF900324445FE000E53DDD /* main.c in Sources */,
+				E2F9649B25B96EC600DA9028 /* twoWayLinkList.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1064,6 +1036,7 @@
 		B80721FC244F4990007A9FE0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4YGH48HCL3;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -1074,6 +1047,7 @@
 		B80721FD244F4990007A9FE0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4YGH48HCL3;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -1084,6 +1058,7 @@
 		B8416907244DCDCD00162FE0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4YGH48HCL3;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -1094,6 +1069,7 @@
 		B8416908244DCDCD00162FE0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4YGH48HCL3;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -1104,6 +1080,7 @@
 		B882625A2461A1DC001EF2A8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4YGH48HCL3;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -1114,6 +1091,7 @@
 		B882625B2461A1DC001EF2A8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4YGH48HCL3;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -1124,6 +1102,7 @@
 		B8A5CCB9244DD70C009114EF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -1132,6 +1111,7 @@
 		B8A5CCBA244DD70C009114EF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -1140,6 +1120,7 @@
 		B8A5CCC5244DDF4F009114EF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -1148,6 +1129,7 @@
 		B8A5CCC6244DDF4F009114EF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -1156,6 +1138,7 @@
 		B8A5CCD0244F310E009114EF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -1164,6 +1147,7 @@
 		B8A5CCD1244F310E009114EF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -1172,6 +1156,7 @@
 		B8A5CCDA24506A17009114EF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -1180,6 +1165,7 @@
 		B8A5CCDB24506A17009114EF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -1188,6 +1174,7 @@
 		B8A5CCE624530CB0009114EF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -1196,6 +1183,7 @@
 		B8A5CCE724530CB0009114EF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -1204,6 +1192,7 @@
 		B8E905492472B1D5006B598E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -1212,6 +1201,7 @@
 		B8E9054A2472B1D5006B598E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -1220,6 +1210,7 @@
 		B8E905582472B4A1006B598E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -1228,6 +1219,7 @@
 		B8E905592472B4A1006B598E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -1259,6 +1251,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -1317,6 +1310,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -1342,30 +1336,11 @@
 			};
 			name = Release;
 		};
-		E21025092440078200F77F8F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4YGH48HCL3;
-				ENABLE_HARDENED_RUNTIME = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		E210250A2440078200F77F8F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4YGH48HCL3;
-				ENABLE_HARDENED_RUNTIME = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
 		E24F6C4C25B82A8D008B5C30 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NL2TZ8P5RF;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -1378,6 +1353,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NL2TZ8P5RF;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -1389,6 +1365,7 @@
 		E2DF8FEF24407A4500E53DDD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4YGH48HCL3;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -1399,6 +1376,7 @@
 		E2DF8FF024407A4500E53DDD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4YGH48HCL3;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -1409,6 +1387,7 @@
 		E2DF8FFA244430A200E53DDD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4YGH48HCL3;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -1419,6 +1398,7 @@
 		E2DF8FFB244430A200E53DDD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4YGH48HCL3;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -1429,6 +1409,7 @@
 		E2DF900524445FE000E53DDD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4YGH48HCL3;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -1439,6 +1420,7 @@
 		E2DF900624445FE000E53DDD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4YGH48HCL3;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -1449,6 +1431,7 @@
 		E2DF900F2445AE6900E53DDD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4YGH48HCL3;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -1459,6 +1442,7 @@
 		E2DF90102445AE6900E53DDD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4YGH48HCL3;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -1568,15 +1552,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E21025082440078200F77F8F /* Build configuration list for PBXNativeTarget "顺序表" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E21025092440078200F77F8F /* Debug */,
-				E210250A2440078200F77F8F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		E24F6C4B25B82A8D008B5C30 /* Build configuration list for PBXNativeTarget "1.顺序表" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1586,7 +1561,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E2DF8FEE24407A4500E53DDD /* Build configuration list for PBXNativeTarget "链表" */ = {
+		E2DF8FEE24407A4500E53DDD /* Build configuration list for PBXNativeTarget "2.链表" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E2DF8FEF24407A4500E53DDD /* Debug */,
@@ -1595,7 +1570,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E2DF8FF9244430A200E53DDD /* Build configuration list for PBXNativeTarget "单项循环链表" */ = {
+		E2DF8FF9244430A200E53DDD /* Build configuration list for PBXNativeTarget "3.单项循环链表" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E2DF8FFA244430A200E53DDD /* Debug */,
@@ -1604,7 +1579,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E2DF900424445FE000E53DDD /* Build configuration list for PBXNativeTarget "双向链表" */ = {
+		E2DF900424445FE000E53DDD /* Build configuration list for PBXNativeTarget "4.双向链表" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E2DF900524445FE000E53DDD /* Debug */,

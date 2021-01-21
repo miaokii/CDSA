@@ -9,10 +9,25 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>2.链表.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
+		<key>3.单项循环链表.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>8</integer>
+		</dict>
+		<key>4.双向链表.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>11</integer>
+		</dict>
 		<key>BF.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>3</integer>
+			<integer>2</integer>
 		</dict>
 		<key>Bothway Linked List.xcscheme_^#shared#^_</key>
 		<dict>
@@ -22,7 +37,7 @@
 		<key>KMP算法.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>11</integer>
+			<integer>1</integer>
 		</dict>
 		<key>Linked list.xcscheme_^#shared#^_</key>
 		<dict>
@@ -37,7 +52,7 @@
 		<key>selection_sort.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>12</integer>
+			<integer>10</integer>
 		</dict>
 		<key>习题.xcscheme_^#shared#^_</key>
 		<dict>
@@ -47,62 +62,64 @@
 		<key>二叉树.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>1</integer>
-		</dict>
-		<key>单项循环链表.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>8</integer>
+			<integer>4</integer>
 		</dict>
 		<key>去除重复字母.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>7</integer>
-		</dict>
-		<key>双向链表.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>4</integer>
+			<integer>14</integer>
 		</dict>
 		<key>图.xcscheme_^#shared#^_</key>
 		<dict>
+			<key>isShown</key>
+			<true/>
 			<key>orderHint</key>
 			<integer>9</integer>
 		</dict>
 		<key>字符串匹配RK算法.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>2</integer>
+			<integer>5</integer>
 		</dict>
 		<key>排序.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>6</integer>
+			<integer>12</integer>
 		</dict>
 		<key>栈和队列.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>5</integer>
+			<integer>13</integer>
 		</dict>
 		<key>栈队列习题.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>13</integer>
+			<integer>7</integer>
 		</dict>
 		<key>线性表习题.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>14</integer>
-		</dict>
-		<key>链表.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>10</integer>
+			<integer>3</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>B88262542461A1DC001EF2A8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>B8A5CCB4244DD70C009114EF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B8A5CCCA244F310E009114EF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B8A5CCD524506A17009114EF</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -112,7 +129,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E21025002440078200F77F8F</key>
+		<key>B8E905522472B4A1006B598E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -143,6 +160,26 @@
 			<true/>
 		</dict>
 		<key>E2DF8FDE24407A0900E53DDD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E2DF8FE924407A4500E53DDD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E2DF8FF4244430A200E53DDD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E2DF8FFF24445FE000E53DDD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E2DF900A2445AE6900E53DDD</key>
 		<dict>
 			<key>primary</key>
 			<true/>

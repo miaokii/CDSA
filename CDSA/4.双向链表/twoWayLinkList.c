@@ -1,49 +1,38 @@
 //
-//  main.c
-//  Bothway Linked List
+//  twoWayCycleLinkList.c
+//  双向链表
 //
-//  Created by miaokii on 2020/4/13.
-//  Copyright © 2020 ly. All rights reserved.
+//  Created by miaokii on 2021/1/21.
+//  Copyright © 2021 ly. All rights reserved.
 //
 
 #include <stdio.h>
-#include "stdlib.h"
-
-#define OK 1
-#define Error 0;
-
-typedef int ElemType;
-typedef int Status;
-
-typedef struct Node {
-    ElemType data;
-    struct Node * piror;
-    struct Node * next;
-}Node, *LinkList;
+#include <stdlib.h>
+#include "twoWayLinkList.h"
 
 /* 创建双向链表 */
-Status ListCreate(LinkList *L) {
-    *L = (LinkList)malloc(sizeof(Node));
-    if (*L==NULL) return Error;
+Status ListCreate(TwoWayLinkList *L) {
+    *L = (TwoWayLinkList)malloc(sizeof(TwoWayNode));
+    if (*L==NULL) return ERROR;
     (*L)->next = NULL;
     (*L)->piror = NULL;
     return OK;
 }
 
 /* 创建双向循环列表 */
-Status CycListCreate(LinkList *L) {
-    *L = (LinkList)malloc(sizeof(Node));
-    if (*L==NULL) return Error;
+Status CycListCreate(TwoWayLinkList *L) {
+    *L = (TwoWayLinkList)malloc(sizeof(TwoWayNode));
+    if (*L==NULL) return ERROR;
     (*L)->next = *L;
     (*L)->piror = *L;
     return OK;
 }
 
 /* 双向链表插入 */
-Status ListInsert(LinkList *L, int i, ElemType e) {
+Status ListInsert(TwoWayLinkList *L, int i, ElemType e) {
     // 位置不能小于1，并且L存在
-    if (*L==NULL || i < 1) return Error;
-    LinkList p = *L, temp;
+    if (*L==NULL || i < 1) return ERROR;
+    TwoWayLinkList p = *L, temp;
     int j = 1;
     // 找到插入点前一个节点
     while (p->next && j < i) {
@@ -52,10 +41,10 @@ Status ListInsert(LinkList *L, int i, ElemType e) {
     }
     
     // 如果到表尾，i还是大于j，表示插入位置不允许
-    if (p->next == NULL && j != i) return Error;
+    if (p->next == NULL && j != i) return ERROR;
     // 新节点
-    temp = (LinkList)malloc(sizeof(Node));
-    if (!temp) return Error;
+    temp = (TwoWayLinkList)malloc(sizeof(TwoWayNode));
+    if (!temp) return ERROR;
     temp->data = e;
     temp->next = NULL;
     temp->piror = NULL;
@@ -79,11 +68,11 @@ Status ListInsert(LinkList *L, int i, ElemType e) {
 }
 
 /*双向循环列表插入*/
-Status ListCycInsert(LinkList *L, int i, ElemType e) {
+Status ListCycInsert(TwoWayLinkList *L, int i, ElemType e) {
     // 边界
-    if (*L==NULL || i < 1) return Error;
+    if (*L==NULL || i < 1) return ERROR;
     
-    LinkList p = *L, temp;
+    TwoWayLinkList p = *L, temp;
     int j = 1;
     // 找到插入点的上一个节点
     while ( p->next != *L && j<i) {
@@ -91,10 +80,10 @@ Status ListCycInsert(LinkList *L, int i, ElemType e) {
         j++;
     }
     // 如果到表尾，i还是大于j，表示插入位置不允许
-    if (p->next == *L && j != i) return Error;
+    if (p->next == *L && j != i) return ERROR;
     
-    temp = (LinkList)malloc(sizeof(Node));
-    if (temp == NULL) return Error;
+    temp = (TwoWayLinkList)malloc(sizeof(TwoWayNode));
+    if (temp == NULL) return ERROR;
     temp->data = e;
     temp->piror = NULL;
     temp->next = NULL;
@@ -109,10 +98,10 @@ Status ListCycInsert(LinkList *L, int i, ElemType e) {
 }
 
 /* 双向链表删除节点 */
-Status ListDelete(LinkList *L, int i, ElemType *e) {
-    if (*L==NULL || i < 1) return Error;
+Status ListDelete(TwoWayLinkList *L, int i, ElemType *e) {
+    if (*L==NULL || i < 1) return ERROR;
     // p 从第一个节点开始
-    LinkList p = (*L)->next;
+    TwoWayLinkList p = (*L)->next;
     int j = 1;
     
     // 找到删除的节点
@@ -122,7 +111,7 @@ Status ListDelete(LinkList *L, int i, ElemType *e) {
     }
     
     // 没有找到节点
-    if (p == NULL) return Error;
+    if (p == NULL) return ERROR;
     
     // 如果删除的节点是尾节点
     if (p->next == NULL) {
@@ -139,9 +128,9 @@ Status ListDelete(LinkList *L, int i, ElemType *e) {
 }
 
 /* 删除双向循环链表的节点 */
-Status ListCycDelete(LinkList *L, int i, ElemType *e) {
-    if (*L==NULL || i < 1) return Error;
-    LinkList p = (*L)->next;
+Status ListCycDelete(TwoWayLinkList *L, int i, ElemType *e) {
+    if (*L==NULL || i < 1) return ERROR;
+    TwoWayLinkList p = (*L)->next;
     int j = 1;
     
     while (p != *L && j < i) {
@@ -149,7 +138,7 @@ Status ListCycDelete(LinkList *L, int i, ElemType *e) {
         j++;
     }
     
-    if (p == *L) return Error;
+    if (p == *L) return ERROR;
     
     *e = p->data;
     p->piror->next = p->next;
@@ -159,9 +148,9 @@ Status ListCycDelete(LinkList *L, int i, ElemType *e) {
 }
 
 /* 查找双向列表位置 */
-int ListIndex(LinkList L, ElemType e) {
+int ListIndex(TwoWayLinkList L, ElemType e) {
     if (L==NULL) return -1;
-    LinkList p = L->next;
+    TwoWayLinkList p = L->next;
     int j = 1;
     while (p) {
         if (p->data == e) {
@@ -174,9 +163,9 @@ int ListIndex(LinkList L, ElemType e) {
 }
 
 /* 查找双向循环链表节点位置 */
-int ListCycIndex(LinkList L, ElemType e) {
+int ListCycIndex(TwoWayLinkList L, ElemType e) {
     if (L==NULL) return -1;
-    LinkList p = L->next;
+    TwoWayLinkList p = L->next;
     int j = 1;
     while (p != L) {
         if (p->data == e) {
@@ -189,9 +178,9 @@ int ListCycIndex(LinkList L, ElemType e) {
 }
 
 /* 删除指定节点 */
-Status ListRemove(LinkList *L, ElemType e) {
-    if (*L==NULL) return Error;
-    LinkList p = (*L)->next, temp;
+Status ListRemove(TwoWayLinkList *L, ElemType e) {
+    if (*L==NULL) return ERROR;
+    TwoWayLinkList p = (*L)->next, temp;
     while (p) {
         if (p->data == e) {
             temp = p;
@@ -210,9 +199,9 @@ Status ListRemove(LinkList *L, ElemType e) {
 }
 
 /* 删除双向链表制定节点 */
-Status ListCycRemove(LinkList *L, ElemType e) {
-    if (*L==NULL) return Error;
-    LinkList p = (*L)->next;
+Status ListCycRemove(TwoWayLinkList *L, ElemType e) {
+    if (*L==NULL) return ERROR;
+    TwoWayLinkList p = (*L)->next;
     while (p!=(*L)) {
         if (p->data == e) {
             p->piror->next = p->next;
@@ -225,8 +214,8 @@ Status ListCycRemove(LinkList *L, ElemType e) {
 }
 
 /* 打印双向链表 */
-void ListPrint(LinkList L) {
-    LinkList p = L;
+void ListPrint(TwoWayLinkList L) {
+    TwoWayLinkList p = L;
     if (L==NULL) return;
     while (p->next) {
         p=p->next;
@@ -236,8 +225,8 @@ void ListPrint(LinkList L) {
 }
 
 /* 打印双向循环链表 */
-void ListCycPrint(LinkList L) {
-    LinkList p = L;
+void ListCycPrint(TwoWayLinkList L) {
+    TwoWayLinkList p = L;
     if (L==NULL) return;
     while (p->next != L) {
         p=p->next;
@@ -246,61 +235,3 @@ void ListCycPrint(LinkList L) {
     printf("\n");
 }
 
-
-int main(int argc, const char * argv[]) {
-    
-    LinkList L;
-    ListCreate(&L);
-    printf("创建双向链表L：");
-    for (int i = 1; i < 6; i++) {
-        ListInsert(&L, i, i);
-    }
-    ListPrint(L);
-    printf("在L的1位置插入5：");
-    ListInsert(&L, 1, 5);
-    ListPrint(L);
-    
-    ElemType e;
-    int i = 5;
-    ListDelete(&L, i, &e);
-    printf("删除L的第%d个节点%d：", i, e);
-    ListPrint(L);
-    
-    printf("查找L中节点5的位置：%d", ListIndex(L, 5));
-    ListRemove(&L, 5);
-    printf("\n删除L总所有节点5：");
-    ListPrint(L);
-    
-    printf("\n\n");
-    
-    LinkList L1;
-    CycListCreate(&L1);
-    printf("创建双向循环链表L1：");
-    for (int i = 1; i < 6; i++) {
-        ListCycInsert(&L1, i, i);
-    }
-    ListCycPrint(L1);
-    
-    printf("在L1的1位置插入5：");
-    ListCycInsert(&L1, 1, 5);
-    ListCycPrint(L1);
-    
-    printf("在L1的6位置插入1：");
-    ListCycInsert(&L1, 6, 1);
-    ListCycPrint(L1);
-    
-    ElemType a;
-    int j = 1;
-    ListCycDelete(&L1, j, &a);
-    printf("删除L1的第%d个节点%d：", j, a);
-    ListCycPrint(L1);
-    
-    printf("查找L1中节点2的位置：%d", ListCycIndex(L1, 2));
-    
-    ListCycRemove(&L1, 5);
-    printf("\n删除L1总所有节点5：");
-    ListCycPrint(L1);
-    
-    printf("\n");
-    return 0;
-}

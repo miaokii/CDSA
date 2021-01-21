@@ -10,7 +10,7 @@
 #define SqList_h
 
 #include <stdio.h>
-#include "publicDefine.h"
+
 
 #define Sq_MaxSize 100
 

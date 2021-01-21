@@ -25,4 +25,6 @@ typedef int Status;
 typedef int ElemType;
 typedef int Bool;
 
+char * desStatus(Status s);
+
 #endif /* publicDefine_h */
