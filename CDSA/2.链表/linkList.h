@@ -28,6 +28,10 @@ Status InitLinkList(LinkList *L);
 /// 打印链表
 void LinkListPrint(LinkList L);
 
+/// 打印链表
+/// @param L 链表
+void LinkListDetailPrint(LinkList L);
+
 /// 单链表插入
 ///
 /// - 初始条件：L已经存在，且 1 < i

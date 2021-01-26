@@ -25,6 +25,7 @@
 		B8E9055C2472B4B6006B598E /* selection_sort.c in Sources */ = {isa = PBXBuildFile; fileRef = B8E9055B2472B4B6006B598E /* selection_sort.c */; };
 		B8E9055F2472B874006B598E /* shell_sort.c in Sources */ = {isa = PBXBuildFile; fileRef = B8E9055E2472B874006B598E /* shell_sort.c */; };
 		B8E905642472E1DC006B598E /* SqList.c in Sources */ = {isa = PBXBuildFile; fileRef = B8E905632472E1DC006B598E /* SqList.c */; };
+		E208CA4725BFB5F0004B3D3B /* LinkListTest.c in Sources */ = {isa = PBXBuildFile; fileRef = E208CA4625BFB5F0004B3D3B /* LinkListTest.c */; };
 		E24F6C9E25B82B66008B5C30 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = E24F6C7B25B82AC0008B5C30 /* main.c */; };
 		E24F6CE325B82C01008B5C30 /* seqlist.c in Sources */ = {isa = PBXBuildFile; fileRef = E24F6CE225B82C01008B5C30 /* seqlist.c */; };
 		E24F6D5C25B94A00008B5C30 /* publicDefine.c in Sources */ = {isa = PBXBuildFile; fileRef = E24F6D5B25B94A00008B5C30 /* publicDefine.c */; };
@@ -220,6 +221,8 @@
 		B8E9055E2472B874006B598E /* shell_sort.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = shell_sort.c; sourceTree = "<group>"; };
 		B8E905622472E1DC006B598E /* SqList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SqList.h; sourceTree = "<group>"; };
 		B8E905632472E1DC006B598E /* SqList.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = SqList.c; sourceTree = "<group>"; };
+		E208CA4525BFB5F0004B3D3B /* LinkListTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LinkListTest.h; sourceTree = "<group>"; };
+		E208CA4625BFB5F0004B3D3B /* LinkListTest.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = LinkListTest.c; sourceTree = "<group>"; };
 		E24F6C4725B82A8D008B5C30 /* 1.顺序表 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "1.顺序表"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E24F6C7B25B82AC0008B5C30 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		E24F6CE125B82C01008B5C30 /* seqlist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = seqlist.h; sourceTree = "<group>"; };
@@ -514,6 +517,8 @@
 				E2DF8FEC24407A4500E53DDD /* main.c */,
 				E2F18F23245AD15A0046F448 /* linkList.h */,
 				E2F18F24245AD15A0046F448 /* linkList.c */,
+				E208CA4525BFB5F0004B3D3B /* LinkListTest.h */,
+				E208CA4625BFB5F0004B3D3B /* LinkListTest.c */,
 			);
 			path = "2.链表";
 			sourceTree = "<group>";
@@ -999,6 +1004,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E24F6D6D25B94A4C008B5C30 /* publicDefine.c in Sources */,
+				E208CA4725BFB5F0004B3D3B /* LinkListTest.c in Sources */,
 				E2F18F25245AD15A0046F448 /* linkList.c in Sources */,
 				E2DF8FED24407A4500E53DDD /* main.c in Sources */,
 			);

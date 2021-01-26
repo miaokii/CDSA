@@ -29,9 +29,20 @@ Status InitLinkList(LinkList *L) {
  */
 void LinkListPrint(LinkList L) {
     // 第一个节点是首元节点
+    if (L==NULL) return;
     LinkList p = L->next;
     while (p) {
         printf("%d ", p->data);
+        p = p->next;
+    }
+    printf("\n");
+}
+
+void LinkListDetailPrint(LinkList L) {
+    if (L==NULL) return;
+    LinkList p = L->next;
+    while (p) {
+        printf("%p:%d ", p, p->data);
         p = p->next;
     }
     printf("\n");
@@ -173,18 +184,4 @@ void LinkListCreateTail(LinkList *L, int n) {
         next=new;
         j++;
     }
-    
-//    *L = (LinkList)malloc(sizeof(Node));
-//    (*L)->next = NULL;
-//    
-//    LinkList p, t = *L;
-//    int i = 1;
-//    while (i <= n) {
-//        i++;
-//        p = (LinkList) malloc(sizeof(Node));
-//        p->data = rand()%10;
-//        p->next = NULL;
-//        t->next = p;
-//        t = p;
-//    }
 }

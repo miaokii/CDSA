@@ -12,8 +12,9 @@
 #include "linkList.h"
 #include "seqlist.h"
 
-int main(int argc, const char * argv[]) {
-    
+#include "LinkListTest.h"
+
+void linkListHandle() {
     LinkList L;
     Status iStatus;
     
@@ -50,6 +51,54 @@ int main(int argc, const char * argv[]) {
     LinkListCreateTail(&L, 10);
     printf("尾插法创建L随机链表：");
     LinkListPrint(L);
+}
+
+int main(int argc, const char * argv[]) {
+    
+    // linkListHandle();
+    
+    ElemType a[] = {1, 2, 3, 4, 5, 6};
+    ElemType b[] = {1, 8, 13, 15, 24, 80};
+    
+    LinkList La;
+    LinkList Lb;
+    
+    InitLinkList(&La);
+    InitLinkList(&Lb);
+    
+    for (int i = 0; i < sizeof(a)/sizeof(ElemType); i++) {
+        LinkListInsert(&La, i+1, a[i]);
+    }
+    
+    for (int i = 0; i < sizeof(b)/sizeof(ElemType); i++) {
+        LinkListInsert(&Lb, i+1, b[i]);
+    }
+    
+    printf("La：");
+    LinkListPrint(La);
+    printf("Lb：");
+    LinkListPrint(Lb);
+    
+    // Merge(&La, &Lb);
+    // printf("合并 La Lb 到 La：\n");
+    
+    // Intersection(&La, Lb);
+    // printf("La和Lb的交集La：\n");
+    
+    // Reverse(&La);
+    // printf("反转La：\n");
+    
+    // printf("删除La介于30-100之间的值：\n");
+    // DeleteRangeList(&La, 30, 100);
+    
+    printf("循环移动La 3位：\n");
+    int aCount = sizeof(a)/sizeof(ElemType);
+    Translate(&La, aCount, 5);
+    
+    printf("La：");
+    LinkListPrint(La);
+    printf("Lb：");
+    LinkListPrint(Lb);
     
     return 0;
 }
